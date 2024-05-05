@@ -1,0 +1,2634 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_23add1f73a5b563c9d5c505d0537345a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_23add1f73a5b563c9d5c505d0537345a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_23add1f73a5b563c9d5c505d0537345a = L.map(
+                "map_23add1f73a5b563c9d5c505d0537345a",
+                {
+                    center: [41.31356628278689, 69.23789436803277],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a76fab437506814d71e5629f9dc9a5bd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a76fab437506814d71e5629f9dc9a5bd.addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+            var marker_44d37e9d048775f31ba6e2ea8281c9f4 = L.marker(
+                [41.3369734, 69.232866],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_66be402dd0adb5bb89d0ea705eec77d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7546c3d87f186750c9b1f5a644ac4e5c = $(`<div id="html_7546c3d87f186750c9b1f5a644ac4e5c" style="width: 100.0%; height: 100.0%;">Хавас</div>`)[0];
+                popup_66be402dd0adb5bb89d0ea705eec77d1.setContent(html_7546c3d87f186750c9b1f5a644ac4e5c);
+            
+        
+
+        marker_44d37e9d048775f31ba6e2ea8281c9f4.bindPopup(popup_66be402dd0adb5bb89d0ea705eec77d1)
+        ;
+
+        
+    
+    
+            var marker_2a8cd84841012392272725b2b9ed6cbf = L.marker(
+                [41.3161731, 69.2524288],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_872403084653a4c3430eab3899be19a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_934b3bd44d49e8daf7cb7f9e9b99f5ca = $(`<div id="html_934b3bd44d49e8daf7cb7f9e9b99f5ca" style="width: 100.0%; height: 100.0%;">Tashkent City Mall</div>`)[0];
+                popup_872403084653a4c3430eab3899be19a2.setContent(html_934b3bd44d49e8daf7cb7f9e9b99f5ca);
+            
+        
+
+        marker_2a8cd84841012392272725b2b9ed6cbf.bindPopup(popup_872403084653a4c3430eab3899be19a2)
+        ;
+
+        
+    
+    
+            var marker_5e46f91940aa224e2f919a8b6f6bceee = L.marker(
+                [41.2978698, 69.2494578],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_a9b8a86ea2392a474997f97fa1332453 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac7442e33912614cfb33df1c81d79e34 = $(`<div id="html_ac7442e33912614cfb33df1c81d79e34" style="width: 100.0%; height: 100.0%;">NEXT MALL</div>`)[0];
+                popup_a9b8a86ea2392a474997f97fa1332453.setContent(html_ac7442e33912614cfb33df1c81d79e34);
+            
+        
+
+        marker_5e46f91940aa224e2f919a8b6f6bceee.bindPopup(popup_a9b8a86ea2392a474997f97fa1332453)
+        ;
+
+        
+    
+    
+            var marker_c4131b7022f8adeda2e83dec7732a6d9 = L.marker(
+                [41.3392649, 69.2545755],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_c5bd19a9245218bf0c9327e3ba953e43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ee83a4a8dcbd84e47940b85ee1c4f74 = $(`<div id="html_1ee83a4a8dcbd84e47940b85ee1c4f74" style="width: 100.0%; height: 100.0%;">ТРЦ Riviera</div>`)[0];
+                popup_c5bd19a9245218bf0c9327e3ba953e43.setContent(html_1ee83a4a8dcbd84e47940b85ee1c4f74);
+            
+        
+
+        marker_c4131b7022f8adeda2e83dec7732a6d9.bindPopup(popup_c5bd19a9245218bf0c9327e3ba953e43)
+        ;
+
+        
+    
+    
+            var marker_b2a6ed90500d34ca97529dc2fce5196b = L.marker(
+                [41.3163658, 69.2307803],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_4ad1006977283e2c8ea631a2ec8780d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcbe8242dc2a5bee706ba48e9813e137 = $(`<div id="html_fcbe8242dc2a5bee706ba48e9813e137" style="width: 100.0%; height: 100.0%;">Samarqand Darvoza Mall</div>`)[0];
+                popup_4ad1006977283e2c8ea631a2ec8780d7.setContent(html_fcbe8242dc2a5bee706ba48e9813e137);
+            
+        
+
+        marker_b2a6ed90500d34ca97529dc2fce5196b.bindPopup(popup_4ad1006977283e2c8ea631a2ec8780d7)
+        ;
+
+        
+    
+    
+            var marker_eec3a77d4c9f6eef466e5e17e26162a9 = L.marker(
+                [41.3165655, 69.2309528],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_458af9cb00cb99050a4e18efcbefbe2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d9f6ace64f14d9f4c3f2e6881437d1e = $(`<div id="html_7d9f6ace64f14d9f4c3f2e6881437d1e" style="width: 100.0%; height: 100.0%;">Jennyfer</div>`)[0];
+                popup_458af9cb00cb99050a4e18efcbefbe2a.setContent(html_7d9f6ace64f14d9f4c3f2e6881437d1e);
+            
+        
+
+        marker_eec3a77d4c9f6eef466e5e17e26162a9.bindPopup(popup_458af9cb00cb99050a4e18efcbefbe2a)
+        ;
+
+        
+    
+    
+            var marker_7025b8245ee5dcffafd1a91296f7ce35 = L.marker(
+                [41.2830467, 69.2222748],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_8737823a4a75ecee23652fddad4fc433 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73feafd69c573d35e58b93d78366cf1f = $(`<div id="html_73feafd69c573d35e58b93d78366cf1f" style="width: 100.0%; height: 100.0%;">ТЦ "МАКРО" Чиланзар</div>`)[0];
+                popup_8737823a4a75ecee23652fddad4fc433.setContent(html_73feafd69c573d35e58b93d78366cf1f);
+            
+        
+
+        marker_7025b8245ee5dcffafd1a91296f7ce35.bindPopup(popup_8737823a4a75ecee23652fddad4fc433)
+        ;
+
+        
+    
+    
+            var marker_5a873f99f95ae3cd7e5969f101273c0f = L.marker(
+                [41.2730867, 69.1693131],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_ced31c207f5fd9f7b0f17d4625ad63bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46893ba73d49541aa56f863d1866aaae = $(`<div id="html_46893ba73d49541aa56f863d1866aaae" style="width: 100.0%; height: 100.0%;">Депо mall</div>`)[0];
+                popup_ced31c207f5fd9f7b0f17d4625ad63bd.setContent(html_46893ba73d49541aa56f863d1866aaae);
+            
+        
+
+        marker_5a873f99f95ae3cd7e5969f101273c0f.bindPopup(popup_ced31c207f5fd9f7b0f17d4625ad63bd)
+        ;
+
+        
+    
+    
+            var marker_699cb45ae10a41cd37c587ef3032d83e = L.marker(
+                [41.2958725, 69.2694925],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_499ac07bb9918bedca5f916b6402f627 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a18dba28643d88bc1b3b6bc06ac2d2d = $(`<div id="html_2a18dba28643d88bc1b3b6bc06ac2d2d" style="width: 100.0%; height: 100.0%;">Prime Time</div>`)[0];
+                popup_499ac07bb9918bedca5f916b6402f627.setContent(html_2a18dba28643d88bc1b3b6bc06ac2d2d);
+            
+        
+
+        marker_699cb45ae10a41cd37c587ef3032d83e.bindPopup(popup_499ac07bb9918bedca5f916b6402f627)
+        ;
+
+        
+    
+    
+            var marker_792d98d2784bac98d5d72460b4b01ff5 = L.marker(
+                [41.2598788, 69.2238091],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_d7fb5f3f787e5b1042321e83add465f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3dcb600ec3851974d1393fd6bea97fd = $(`<div id="html_a3dcb600ec3851974d1393fd6bea97fd" style="width: 100.0%; height: 100.0%;">ТРЦ Vega Centre</div>`)[0];
+                popup_d7fb5f3f787e5b1042321e83add465f8.setContent(html_a3dcb600ec3851974d1393fd6bea97fd);
+            
+        
+
+        marker_792d98d2784bac98d5d72460b4b01ff5.bindPopup(popup_d7fb5f3f787e5b1042321e83add465f8)
+        ;
+
+        
+    
+    
+            var marker_1df38061dcbab3c423c2140e7247efa9 = L.marker(
+                [41.3371849, 69.2825241],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_be4e958c7862dcd72068522ef7ba59d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1122552bd4c4f84d12aacfcc6b0749ba = $(`<div id="html_1122552bd4c4f84d12aacfcc6b0749ba" style="width: 100.0%; height: 100.0%;">Арт Центр Ташкент Плаза</div>`)[0];
+                popup_be4e958c7862dcd72068522ef7ba59d8.setContent(html_1122552bd4c4f84d12aacfcc6b0749ba);
+            
+        
+
+        marker_1df38061dcbab3c423c2140e7247efa9.bindPopup(popup_be4e958c7862dcd72068522ef7ba59d8)
+        ;
+
+        
+    
+    
+            var marker_b0e6eb774ebaaa3e697ddb395e97cd8a = L.marker(
+                [41.3113745, 69.2754414],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_9e7c87d127e82393b8d5e7f758bbb448 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d6606f287515d4f74480f22a6388ce1 = $(`<div id="html_4d6606f287515d4f74480f22a6388ce1" style="width: 100.0%; height: 100.0%;">ТЦ Пойтахт</div>`)[0];
+                popup_9e7c87d127e82393b8d5e7f758bbb448.setContent(html_4d6606f287515d4f74480f22a6388ce1);
+            
+        
+
+        marker_b0e6eb774ebaaa3e697ddb395e97cd8a.bindPopup(popup_9e7c87d127e82393b8d5e7f758bbb448)
+        ;
+
+        
+    
+    
+            var marker_50555d80d00d14c37cea0840aab0a533 = L.marker(
+                [41.2813153, 69.2015306],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_3e8c8b1494e7a1e60ca0ab47fdd38687 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca5e662eaf3cbb9f24b88846302573c0 = $(`<div id="html_ca5e662eaf3cbb9f24b88846302573c0" style="width: 100.0%; height: 100.0%;">ТРЦ Атлас</div>`)[0];
+                popup_3e8c8b1494e7a1e60ca0ab47fdd38687.setContent(html_ca5e662eaf3cbb9f24b88846302573c0);
+            
+        
+
+        marker_50555d80d00d14c37cea0840aab0a533.bindPopup(popup_3e8c8b1494e7a1e60ca0ab47fdd38687)
+        ;
+
+        
+    
+    
+            var marker_b8574e5f9b1da87548b29349af86686f = L.marker(
+                [41.2919784, 69.2109978],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_ba1830d28d56d22592973b654e315033 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4dd96b0921b397611a9ebdedce0ca156 = $(`<div id="html_4dd96b0921b397611a9ebdedce0ca156" style="width: 100.0%; height: 100.0%;">ТРК "Parus"</div>`)[0];
+                popup_ba1830d28d56d22592973b654e315033.setContent(html_4dd96b0921b397611a9ebdedce0ca156);
+            
+        
+
+        marker_b8574e5f9b1da87548b29349af86686f.bindPopup(popup_ba1830d28d56d22592973b654e315033)
+        ;
+
+        
+    
+    
+            var marker_6fe1235c58def27b99b8a98dddb0205c = L.marker(
+                [41.3045425, 69.3076281],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_b6b5c1c482209d77410c4fab387c41f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a3604ab5d72b26d7fa90d27843d8a42 = $(`<div id="html_6a3604ab5d72b26d7fa90d27843d8a42" style="width: 100.0%; height: 100.0%;">Atrium Trade Centre</div>`)[0];
+                popup_b6b5c1c482209d77410c4fab387c41f9.setContent(html_6a3604ab5d72b26d7fa90d27843d8a42);
+            
+        
+
+        marker_6fe1235c58def27b99b8a98dddb0205c.bindPopup(popup_b6b5c1c482209d77410c4fab387c41f9)
+        ;
+
+        
+    
+    
+            var marker_7230b1b105b92e476ba104da4ad9379c = L.marker(
+                [41.3378796, 69.2230524],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_a0eff6731448f1ae5d6c61a1f691b00e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77a152839d3045e60b0833f2f596c2cb = $(`<div id="html_77a152839d3045e60b0833f2f596c2cb" style="width: 100.0%; height: 100.0%;">"Chig'atoy" ТРЦ</div>`)[0];
+                popup_a0eff6731448f1ae5d6c61a1f691b00e.setContent(html_77a152839d3045e60b0833f2f596c2cb);
+            
+        
+
+        marker_7230b1b105b92e476ba104da4ad9379c.bindPopup(popup_a0eff6731448f1ae5d6c61a1f691b00e)
+        ;
+
+        
+    
+    
+            var marker_8a0ec9757c756ad4a87e184ab41b99ab = L.marker(
+                [41.3086111, 69.2691667],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_83c0300382824fdb52281038569b7069 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22028920066fda41f23c5f5f623aece6 = $(`<div id="html_22028920066fda41f23c5f5f623aece6" style="width: 100.0%; height: 100.0%;">ЦУМ</div>`)[0];
+                popup_83c0300382824fdb52281038569b7069.setContent(html_22028920066fda41f23c5f5f623aece6);
+            
+        
+
+        marker_8a0ec9757c756ad4a87e184ab41b99ab.bindPopup(popup_83c0300382824fdb52281038569b7069)
+        ;
+
+        
+    
+    
+            var marker_d2091832ec44bb8e3d9ab30e2c281d59 = L.marker(
+                [41.2722482, 69.1757677],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_cdcd41b30fce4e89d53822a5e30712a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75781cb24e928f8d3baa90266a44582e = $(`<div id="html_75781cb24e928f8d3baa90266a44582e" style="width: 100.0%; height: 100.0%;">Globus Mall</div>`)[0];
+                popup_cdcd41b30fce4e89d53822a5e30712a1.setContent(html_75781cb24e928f8d3baa90266a44582e);
+            
+        
+
+        marker_d2091832ec44bb8e3d9ab30e2c281d59.bindPopup(popup_cdcd41b30fce4e89d53822a5e30712a1)
+        ;
+
+        
+    
+    
+            var marker_c5b66ff3619e97aa7a9ecdf273054e41 = L.marker(
+                [41.327765, 69.2647595],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_3983ba05dbe003e8cc907cbfd1226e2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3632223d853445c2938da82eabe3014d = $(`<div id="html_3632223d853445c2938da82eabe3014d" style="width: 100.0%; height: 100.0%;">Anhor Park</div>`)[0];
+                popup_3983ba05dbe003e8cc907cbfd1226e2d.setContent(html_3632223d853445c2938da82eabe3014d);
+            
+        
+
+        marker_c5b66ff3619e97aa7a9ecdf273054e41.bindPopup(popup_3983ba05dbe003e8cc907cbfd1226e2d)
+        ;
+
+        
+    
+    
+            var marker_ae6f4d1dcd6db754e24946e17e49128d = L.marker(
+                [41.3218099, 69.2377502],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_a33895f4972beb8a29ed6a6b742485ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b462a97f6036f1b1d3eedfdf9feb935 = $(`<div id="html_1b462a97f6036f1b1d3eedfdf9feb935" style="width: 100.0%; height: 100.0%;">Gum MALL (Turkuaz)</div>`)[0];
+                popup_a33895f4972beb8a29ed6a6b742485ec.setContent(html_1b462a97f6036f1b1d3eedfdf9feb935);
+            
+        
+
+        marker_ae6f4d1dcd6db754e24946e17e49128d.bindPopup(popup_a33895f4972beb8a29ed6a6b742485ec)
+        ;
+
+        
+    
+    
+            var marker_383e835c457531499a89a1b7e77328a7 = L.marker(
+                [41.3364448, 69.2426434],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_225ea8f6e3d9430b19679a6fd749a05a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27080c6da84d028a06588d1cd1fd236e = $(`<div id="html_27080c6da84d028a06588d1cd1fd236e" style="width: 100.0%; height: 100.0%;">AZIZA</div>`)[0];
+                popup_225ea8f6e3d9430b19679a6fd749a05a.setContent(html_27080c6da84d028a06588d1cd1fd236e);
+            
+        
+
+        marker_383e835c457531499a89a1b7e77328a7.bindPopup(popup_225ea8f6e3d9430b19679a6fd749a05a)
+        ;
+
+        
+    
+    
+            var marker_db8fad9c375ab109b772d6ef69ec512d = L.marker(
+                [41.3197726, 69.28545],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_e6791fe4854466f0bf0c7b1039828087 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75e41a20341b956f930147761f20de47 = $(`<div id="html_75e41a20341b956f930147761f20de47" style="width: 100.0%; height: 100.0%;">Супер Центр</div>`)[0];
+                popup_e6791fe4854466f0bf0c7b1039828087.setContent(html_75e41a20341b956f930147761f20de47);
+            
+        
+
+        marker_db8fad9c375ab109b772d6ef69ec512d.bindPopup(popup_e6791fe4854466f0bf0c7b1039828087)
+        ;
+
+        
+    
+    
+            var marker_0ee6d5d33956692da8e32e7d3cb8c4b9 = L.marker(
+                [41.3017691, 69.2441976],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_614c1c2860e2175c48bcd0af32a8478d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f995e61805a64b48807c6a10cc3d2dc1 = $(`<div id="html_f995e61805a64b48807c6a10cc3d2dc1" style="width: 100.0%; height: 100.0%;">Сити Макон</div>`)[0];
+                popup_614c1c2860e2175c48bcd0af32a8478d.setContent(html_f995e61805a64b48807c6a10cc3d2dc1);
+            
+        
+
+        marker_0ee6d5d33956692da8e32e7d3cb8c4b9.bindPopup(popup_614c1c2860e2175c48bcd0af32a8478d)
+        ;
+
+        
+    
+    
+            var marker_8ee298df959ca6fd742e8eb5aadd8a5b = L.marker(
+                [41.3538246, 69.3535396],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_9758241974f2cfc946b7d5d6774f806b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_366415290914ba3185eb12250afb2f0b = $(`<div id="html_366415290914ba3185eb12250afb2f0b" style="width: 100.0%; height: 100.0%;">ТРЦ Atlas</div>`)[0];
+                popup_9758241974f2cfc946b7d5d6774f806b.setContent(html_366415290914ba3185eb12250afb2f0b);
+            
+        
+
+        marker_8ee298df959ca6fd742e8eb5aadd8a5b.bindPopup(popup_9758241974f2cfc946b7d5d6774f806b)
+        ;
+
+        
+    
+    
+            var marker_ac1ed6c11ca55e4cd1ed5515018c1934 = L.marker(
+                [41.3000156, 69.2486997],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_767904c1e0890c4aeaf78b52934d21ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25f5e8fe8b6fc3abda8362c66b882407 = $(`<div id="html_25f5e8fe8b6fc3abda8362c66b882407" style="width: 100.0%; height: 100.0%;">Dream line</div>`)[0];
+                popup_767904c1e0890c4aeaf78b52934d21ab.setContent(html_25f5e8fe8b6fc3abda8362c66b882407);
+            
+        
+
+        marker_ac1ed6c11ca55e4cd1ed5515018c1934.bindPopup(popup_767904c1e0890c4aeaf78b52934d21ab)
+        ;
+
+        
+    
+    
+            var marker_a71951396d58c788911feefcd4ad45ed = L.marker(
+                [41.36726, 69.2910156],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_fa16a14209af92bdde02b391d44ddb44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_639e6a7c81721697c6e281bbbd6fe8b9 = $(`<div id="html_639e6a7c81721697c6e281bbbd6fe8b9" style="width: 100.0%; height: 100.0%;">Мегапланет</div>`)[0];
+                popup_fa16a14209af92bdde02b391d44ddb44.setContent(html_639e6a7c81721697c6e281bbbd6fe8b9);
+            
+        
+
+        marker_a71951396d58c788911feefcd4ad45ed.bindPopup(popup_fa16a14209af92bdde02b391d44ddb44)
+        ;
+
+        
+    
+    
+            var marker_971a10afc99acb9d15cdc31ebe1f6f1b = L.marker(
+                [41.337879, 69.2086287],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_0880ed8f11bcf9113e1f54dccf23809e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63376ded802019f2f4aa054082ac0ffe = $(`<div id="html_63376ded802019f2f4aa054082ac0ffe" style="width: 100.0%; height: 100.0%;">BELLEZZA BOUTIQUE</div>`)[0];
+                popup_0880ed8f11bcf9113e1f54dccf23809e.setContent(html_63376ded802019f2f4aa054082ac0ffe);
+            
+        
+
+        marker_971a10afc99acb9d15cdc31ebe1f6f1b.bindPopup(popup_0880ed8f11bcf9113e1f54dccf23809e)
+        ;
+
+        
+    
+    
+            var marker_abce261a0406eb73dffdd93613fd5fae = L.marker(
+                [41.3547988, 69.2451255],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_8ec64258c514270b7c95f01a21df4319 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59288c0596f1690a2c7b1bd6823a339b = $(`<div id="html_59288c0596f1690a2c7b1bd6823a339b" style="width: 100.0%; height: 100.0%;">Jomiy Mall</div>`)[0];
+                popup_8ec64258c514270b7c95f01a21df4319.setContent(html_59288c0596f1690a2c7b1bd6823a339b);
+            
+        
+
+        marker_abce261a0406eb73dffdd93613fd5fae.bindPopup(popup_8ec64258c514270b7c95f01a21df4319)
+        ;
+
+        
+    
+    
+            var marker_b8e3ef0652dae9dc7cc8c44d3cf4b94c = L.marker(
+                [41.2909931, 69.2244056],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_b6ed560a144d34ab574b78e1e70fccf6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd9d26371b7b44252381a6e95ab81f1b = $(`<div id="html_cd9d26371b7b44252381a6e95ab81f1b" style="width: 100.0%; height: 100.0%;">AMERICA VS FAMILY&STORE</div>`)[0];
+                popup_b6ed560a144d34ab574b78e1e70fccf6.setContent(html_cd9d26371b7b44252381a6e95ab81f1b);
+            
+        
+
+        marker_b8e3ef0652dae9dc7cc8c44d3cf4b94c.bindPopup(popup_b6ed560a144d34ab574b78e1e70fccf6)
+        ;
+
+        
+    
+    
+            var marker_8b9ab4fc6b48b2e81413c69cb7d95385 = L.marker(
+                [41.3124284, 69.2746127],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_70a53d217bf1d31996795f544032cd4d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20718a48752fbd94e1defa15682cc63d = $(`<div id="html_20718a48752fbd94e1defa15682cc63d" style="width: 100.0%; height: 100.0%;">Аркада</div>`)[0];
+                popup_70a53d217bf1d31996795f544032cd4d.setContent(html_20718a48752fbd94e1defa15682cc63d);
+            
+        
+
+        marker_8b9ab4fc6b48b2e81413c69cb7d95385.bindPopup(popup_70a53d217bf1d31996795f544032cd4d)
+        ;
+
+        
+    
+    
+            var marker_651c96e9396d087d5fa7ecf816e0f4db = L.marker(
+                [41.2739739, 69.1662402],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_8d9cef929d52866fbb564de9d89f7c40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a6715826a81edbc2f0751f72dea6878 = $(`<div id="html_1a6715826a81edbc2f0751f72dea6878" style="width: 100.0%; height: 100.0%;">ТЦ "Катта Каьни"</div>`)[0];
+                popup_8d9cef929d52866fbb564de9d89f7c40.setContent(html_1a6715826a81edbc2f0751f72dea6878);
+            
+        
+
+        marker_651c96e9396d087d5fa7ecf816e0f4db.bindPopup(popup_8d9cef929d52866fbb564de9d89f7c40)
+        ;
+
+        
+    
+    
+            var marker_4d4b5b3a218f8d2f66eba75285db40c2 = L.marker(
+                [41.358701, 69.299673],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_1e589b49dba147bf215b82b789b8190a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cc307bd3ff2c4287fbb9c17f0268d9b = $(`<div id="html_6cc307bd3ff2c4287fbb9c17f0268d9b" style="width: 100.0%; height: 100.0%;">ZARAFSHONMALL ТОШКЕНТ ЮНУСОБОД РАЙОН МАТБУОТЧИЛАР 17</div>`)[0];
+                popup_1e589b49dba147bf215b82b789b8190a.setContent(html_6cc307bd3ff2c4287fbb9c17f0268d9b);
+            
+        
+
+        marker_4d4b5b3a218f8d2f66eba75285db40c2.bindPopup(popup_1e589b49dba147bf215b82b789b8190a)
+        ;
+
+        
+    
+    
+            var marker_02b336336e5a90621d15770fcafb623b = L.marker(
+                [41.2923929, 69.1809099],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_c17dfdda34474f26704348c63dbcad57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c02b7ec4e989cdb9271adb5900e9d2e0 = $(`<div id="html_c02b7ec4e989cdb9271adb5900e9d2e0" style="width: 100.0%; height: 100.0%;">Uchtepa Outlet Centre</div>`)[0];
+                popup_c17dfdda34474f26704348c63dbcad57.setContent(html_c02b7ec4e989cdb9271adb5900e9d2e0);
+            
+        
+
+        marker_02b336336e5a90621d15770fcafb623b.bindPopup(popup_c17dfdda34474f26704348c63dbcad57)
+        ;
+
+        
+    
+    
+            var marker_d4eea797cba68bce7deb391932cbbdf1 = L.marker(
+                [41.2986417, 69.246167],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_2388f172796e5fbd793b69ff4c6faef5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28da9e028b6b6f2572399aa1037f01cc = $(`<div id="html_28da9e028b6b6f2572399aa1037f01cc" style="width: 100.0%; height: 100.0%;">Seoul Mun</div>`)[0];
+                popup_2388f172796e5fbd793b69ff4c6faef5.setContent(html_28da9e028b6b6f2572399aa1037f01cc);
+            
+        
+
+        marker_d4eea797cba68bce7deb391932cbbdf1.bindPopup(popup_2388f172796e5fbd793b69ff4c6faef5)
+        ;
+
+        
+    
+    
+            var marker_06f0ed175995c11250846af8c5f5cf00 = L.marker(
+                [41.3255297, 69.2346253],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_c22c52dab8ea3b561852fe785da4d5bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86e9ade60a696a2b8e43ee1998ca8849 = $(`<div id="html_86e9ade60a696a2b8e43ee1998ca8849" style="width: 100.0%; height: 100.0%;">Chorsu Gold Center</div>`)[0];
+                popup_c22c52dab8ea3b561852fe785da4d5bf.setContent(html_86e9ade60a696a2b8e43ee1998ca8849);
+            
+        
+
+        marker_06f0ed175995c11250846af8c5f5cf00.bindPopup(popup_c22c52dab8ea3b561852fe785da4d5bf)
+        ;
+
+        
+    
+    
+            var marker_3c9e1a9d63cfabd95c853d205b273400 = L.marker(
+                [41.3494919, 69.1776932],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_59b8ffb1c6bc29bae675bc9b30789348 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eeb375b04f77ba72e9f7bd1e2d461c5c = $(`<div id="html_eeb375b04f77ba72e9f7bd1e2d461c5c" style="width: 100.0%; height: 100.0%;">Makro Market</div>`)[0];
+                popup_59b8ffb1c6bc29bae675bc9b30789348.setContent(html_eeb375b04f77ba72e9f7bd1e2d461c5c);
+            
+        
+
+        marker_3c9e1a9d63cfabd95c853d205b273400.bindPopup(popup_59b8ffb1c6bc29bae675bc9b30789348)
+        ;
+
+        
+    
+    
+            var marker_4393dfbe5ebdc1f9264c81854e03781d = L.marker(
+                [41.3213703, 69.2375563],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_232c30bea34fb069c1a4f4999ca0cde9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efecdbfb738ffbd88154b6771264668e = $(`<div id="html_efecdbfb738ffbd88154b6771264668e" style="width: 100.0%; height: 100.0%;">Туркуаз Чорсу</div>`)[0];
+                popup_232c30bea34fb069c1a4f4999ca0cde9.setContent(html_efecdbfb738ffbd88154b6771264668e);
+            
+        
+
+        marker_4393dfbe5ebdc1f9264c81854e03781d.bindPopup(popup_232c30bea34fb069c1a4f4999ca0cde9)
+        ;
+
+        
+    
+    
+            var marker_e9d77d1ed1aba04014156b4d4a1f8658 = L.marker(
+                [41.2799525, 69.2516381],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_f5023eb9dc7ce77ce054c4d511bcc523 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91d31f8067c0d51d8331e3c34874784f = $(`<div id="html_91d31f8067c0d51d8331e3c34874784f" style="width: 100.0%; height: 100.0%;">ТДК Comfort Plaza</div>`)[0];
+                popup_f5023eb9dc7ce77ce054c4d511bcc523.setContent(html_91d31f8067c0d51d8331e3c34874784f);
+            
+        
+
+        marker_e9d77d1ed1aba04014156b4d4a1f8658.bindPopup(popup_f5023eb9dc7ce77ce054c4d511bcc523)
+        ;
+
+        
+    
+    
+            var marker_d6807b673f2d3da90e771b9757d79ee6 = L.marker(
+                [41.2920758, 69.2114042],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_fe815f33aba82f1a111bea9001fc822a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58cb4206b43cb973aa62e0f9093673db = $(`<div id="html_58cb4206b43cb973aa62e0f9093673db" style="width: 100.0%; height: 100.0%;">7 Days Shopping Center</div>`)[0];
+                popup_fe815f33aba82f1a111bea9001fc822a.setContent(html_58cb4206b43cb973aa62e0f9093673db);
+            
+        
+
+        marker_d6807b673f2d3da90e771b9757d79ee6.bindPopup(popup_fe815f33aba82f1a111bea9001fc822a)
+        ;
+
+        
+    
+    
+            var marker_b2f6b7c9bfe6441b048a6cedfc66af17 = L.marker(
+                [41.3124376, 69.2739369],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_794b83ab27020012a33de1e284c5ef9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_101755fdb9efe6f166256ab9949a3294 = $(`<div id="html_101755fdb9efe6f166256ab9949a3294" style="width: 100.0%; height: 100.0%;">Зарафшан</div>`)[0];
+                popup_794b83ab27020012a33de1e284c5ef9c.setContent(html_101755fdb9efe6f166256ab9949a3294);
+            
+        
+
+        marker_b2f6b7c9bfe6441b048a6cedfc66af17.bindPopup(popup_794b83ab27020012a33de1e284c5ef9c)
+        ;
+
+        
+    
+    
+            var marker_6429469c3152f5437439ed887d1e152b = L.marker(
+                [41.3489569, 69.1778971],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_4bc54c102af3353cdbc27b8316c3c8ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbdab77637fd7647356f9296aef9f280 = $(`<div id="html_bbdab77637fd7647356f9296aef9f280" style="width: 100.0%; height: 100.0%;">Sanone Uzbekistan</div>`)[0];
+                popup_4bc54c102af3353cdbc27b8316c3c8ac.setContent(html_bbdab77637fd7647356f9296aef9f280);
+            
+        
+
+        marker_6429469c3152f5437439ed887d1e152b.bindPopup(popup_4bc54c102af3353cdbc27b8316c3c8ac)
+        ;
+
+        
+    
+    
+            var marker_2d64aad472b7f613092308da94c69fd1 = L.marker(
+                [41.338281, 69.1754837],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_c33390df6499ee7089b00f26a430bd60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ffed87417fe6e063fa1ac82b5f953d72 = $(`<div id="html_ffed87417fe6e063fa1ac82b5f953d72" style="width: 100.0%; height: 100.0%;">Munis boutique</div>`)[0];
+                popup_c33390df6499ee7089b00f26a430bd60.setContent(html_ffed87417fe6e063fa1ac82b5f953d72);
+            
+        
+
+        marker_2d64aad472b7f613092308da94c69fd1.bindPopup(popup_c33390df6499ee7089b00f26a430bd60)
+        ;
+
+        
+    
+    
+            var marker_67a420319578e3e693be4f097375abff = L.marker(
+                [41.2877664, 69.2187447],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_d8954e4f1bb20689b76bb4209d788ef2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c94964048d6e97352a696762948da72 = $(`<div id="html_9c94964048d6e97352a696762948da72" style="width: 100.0%; height: 100.0%;">marketonline</div>`)[0];
+                popup_d8954e4f1bb20689b76bb4209d788ef2.setContent(html_9c94964048d6e97352a696762948da72);
+            
+        
+
+        marker_67a420319578e3e693be4f097375abff.bindPopup(popup_d8954e4f1bb20689b76bb4209d788ef2)
+        ;
+
+        
+    
+    
+            var marker_a7e7ac20ba8aa428b6bf245d4d75eb4e = L.marker(
+                [41.2772005, 69.2051721],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_9415225aba6a4c2c9362fc9c3a0a991c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3d85b3b735c36ab6c89c352d503d374 = $(`<div id="html_f3d85b3b735c36ab6c89c352d503d374" style="width: 100.0%; height: 100.0%;">Integro Savdo Markazi</div>`)[0];
+                popup_9415225aba6a4c2c9362fc9c3a0a991c.setContent(html_f3d85b3b735c36ab6c89c352d503d374);
+            
+        
+
+        marker_a7e7ac20ba8aa428b6bf245d4d75eb4e.bindPopup(popup_9415225aba6a4c2c9362fc9c3a0a991c)
+        ;
+
+        
+    
+    
+            var marker_2b1908fe95927a37dbf272f0fee5b0d5 = L.marker(
+                [41.2885383, 69.2076875],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_478313b7e72d06f9ec244151d16fba07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e3cda6f3f6f760017c67ba1f0947222 = $(`<div id="html_9e3cda6f3f6f760017c67ba1f0947222" style="width: 100.0%; height: 100.0%;">Little brand</div>`)[0];
+                popup_478313b7e72d06f9ec244151d16fba07.setContent(html_9e3cda6f3f6f760017c67ba1f0947222);
+            
+        
+
+        marker_2b1908fe95927a37dbf272f0fee5b0d5.bindPopup(popup_478313b7e72d06f9ec244151d16fba07)
+        ;
+
+        
+    
+    
+            var marker_82b32c2341bbc5ed2f9a949214ad2993 = L.marker(
+                [41.2817254, 69.2500845],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_638af5813dc7e5d04530871b0d2f1009 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94c567c666e40d7df5c6018c1a46f50b = $(`<div id="html_94c567c666e40d7df5c6018c1a46f50b" style="width: 100.0%; height: 100.0%;">Oikos -Uzbekistan</div>`)[0];
+                popup_638af5813dc7e5d04530871b0d2f1009.setContent(html_94c567c666e40d7df5c6018c1a46f50b);
+            
+        
+
+        marker_82b32c2341bbc5ed2f9a949214ad2993.bindPopup(popup_638af5813dc7e5d04530871b0d2f1009)
+        ;
+
+        
+    
+    
+            var marker_367fdce7e586415d93dff2ef98b6fe47 = L.marker(
+                [41.2779849, 69.1981468],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_f4af760c701b4f8848f37e12278c8d0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_592ef6a566c235e3e732ff18b282362a = $(`<div id="html_592ef6a566c235e3e732ff18b282362a" style="width: 100.0%; height: 100.0%;">Andalus</div>`)[0];
+                popup_f4af760c701b4f8848f37e12278c8d0c.setContent(html_592ef6a566c235e3e732ff18b282362a);
+            
+        
+
+        marker_367fdce7e586415d93dff2ef98b6fe47.bindPopup(popup_f4af760c701b4f8848f37e12278c8d0c)
+        ;
+
+        
+    
+    
+            var marker_908f654e5b684c38d845a6f5be7b930f = L.marker(
+                [41.2629391, 69.1536182],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_ea357c7bffea38b07c18ee93a432ee50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2ba9838a2278f8c2ce8dcfda12c9df3 = $(`<div id="html_c2ba9838a2278f8c2ce8dcfda12c9df3" style="width: 100.0%; height: 100.0%;">Multi Home algoritm</div>`)[0];
+                popup_ea357c7bffea38b07c18ee93a432ee50.setContent(html_c2ba9838a2278f8c2ce8dcfda12c9df3);
+            
+        
+
+        marker_908f654e5b684c38d845a6f5be7b930f.bindPopup(popup_ea357c7bffea38b07c18ee93a432ee50)
+        ;
+
+        
+    
+    
+            var marker_163df0aa0af218da9f999b9f21eaff26 = L.marker(
+                [41.3551497, 69.3339153],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_a65c7fafcd1955bc6abedbee7d030c34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07bc47d03380b5d326d03f2a15b3424d = $(`<div id="html_07bc47d03380b5d326d03f2a15b3424d" style="width: 100.0%; height: 100.0%;">Mall “Sampi”</div>`)[0];
+                popup_a65c7fafcd1955bc6abedbee7d030c34.setContent(html_07bc47d03380b5d326d03f2a15b3424d);
+            
+        
+
+        marker_163df0aa0af218da9f999b9f21eaff26.bindPopup(popup_a65c7fafcd1955bc6abedbee7d030c34)
+        ;
+
+        
+    
+    
+            var marker_c65dde53bea418b748f0cb0b1f463455 = L.marker(
+                [41.3750315, 69.3160626],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_567b0f71cf02e657e9d5f28d28ba3785 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74b4c99345605f05defbdeef248e1240 = $(`<div id="html_74b4c99345605f05defbdeef248e1240" style="width: 100.0%; height: 100.0%;">ТРК Atlas Yunusabad</div>`)[0];
+                popup_567b0f71cf02e657e9d5f28d28ba3785.setContent(html_74b4c99345605f05defbdeef248e1240);
+            
+        
+
+        marker_c65dde53bea418b748f0cb0b1f463455.bindPopup(popup_567b0f71cf02e657e9d5f28d28ba3785)
+        ;
+
+        
+    
+    
+            var marker_c4008f2a188f860184361031b269b926 = L.marker(
+                [41.2722804, 69.3090612],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_a17269b79a6bd931fa38df7a759e0045 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6e931371d0e5b86b9872456888da139 = $(`<div id="html_b6e931371d0e5b86b9872456888da139" style="width: 100.0%; height: 100.0%;">VET+ ZOO PLANETA</div>`)[0];
+                popup_a17269b79a6bd931fa38df7a759e0045.setContent(html_b6e931371d0e5b86b9872456888da139);
+            
+        
+
+        marker_c4008f2a188f860184361031b269b926.bindPopup(popup_a17269b79a6bd931fa38df7a759e0045)
+        ;
+
+        
+    
+    
+            var marker_5bfe0e4c5be5fd5f084d001c4f1b33e9 = L.marker(
+                [41.3225361, 69.1970973],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_21804f834801a990a4483416d448af97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9207d7551e6add356063b610effa47e = $(`<div id="html_b9207d7551e6add356063b610effa47e" style="width: 100.0%; height: 100.0%;">Muhteshem boutique</div>`)[0];
+                popup_21804f834801a990a4483416d448af97.setContent(html_b9207d7551e6add356063b610effa47e);
+            
+        
+
+        marker_5bfe0e4c5be5fd5f084d001c4f1b33e9.bindPopup(popup_21804f834801a990a4483416d448af97)
+        ;
+
+        
+    
+    
+            var marker_98d421bdceab52b45c54baac2610e353 = L.marker(
+                [41.3164689, 69.2306578],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_71f252e67d796b55eec303e84a1c650a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_462e5fb20035a6ad30ba68512307c58b = $(`<div id="html_462e5fb20035a6ad30ba68512307c58b" style="width: 100.0%; height: 100.0%;">Orchestra</div>`)[0];
+                popup_71f252e67d796b55eec303e84a1c650a.setContent(html_462e5fb20035a6ad30ba68512307c58b);
+            
+        
+
+        marker_98d421bdceab52b45c54baac2610e353.bindPopup(popup_71f252e67d796b55eec303e84a1c650a)
+        ;
+
+        
+    
+    
+            var marker_d550f65e5d7d55418edd9c57e2e2362d = L.marker(
+                [41.2851938, 69.2251683],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_6fa6e59614e6e3e91018d1cca7ce7a69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e055fa9d7a693eecd96cc9087a55bf5 = $(`<div id="html_9e055fa9d7a693eecd96cc9087a55bf5" style="width: 100.0%; height: 100.0%;">Santoni</div>`)[0];
+                popup_6fa6e59614e6e3e91018d1cca7ce7a69.setContent(html_9e055fa9d7a693eecd96cc9087a55bf5);
+            
+        
+
+        marker_d550f65e5d7d55418edd9c57e2e2362d.bindPopup(popup_6fa6e59614e6e3e91018d1cca7ce7a69)
+        ;
+
+        
+    
+    
+            var marker_2a3e09cf555277838a1aa44ac8c52484 = L.marker(
+                [41.3485115, 69.2386837],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_39ebc57b08e7bdab9cafdab642ceee46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4412786872e621918078c4aed6621f1 = $(`<div id="html_e4412786872e621918078c4aed6621f1" style="width: 100.0%; height: 100.0%;">Velton Uzbekistan</div>`)[0];
+                popup_39ebc57b08e7bdab9cafdab642ceee46.setContent(html_e4412786872e621918078c4aed6621f1);
+            
+        
+
+        marker_2a3e09cf555277838a1aa44ac8c52484.bindPopup(popup_39ebc57b08e7bdab9cafdab642ceee46)
+        ;
+
+        
+    
+    
+            var marker_ee2c18591d4fe355ae4d87311d4b9309 = L.marker(
+                [41.3486074, 69.167468],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_feef337043a13348cf98deb6a5a189e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa621278c3d000b5137fd12a852cdc70 = $(`<div id="html_fa621278c3d000b5137fd12a852cdc70" style="width: 100.0%; height: 100.0%;">UZFRAME</div>`)[0];
+                popup_feef337043a13348cf98deb6a5a189e4.setContent(html_fa621278c3d000b5137fd12a852cdc70);
+            
+        
+
+        marker_ee2c18591d4fe355ae4d87311d4b9309.bindPopup(popup_feef337043a13348cf98deb6a5a189e4)
+        ;
+
+        
+    
+    
+            var marker_1de6a25978a3281a729b574f495775e6 = L.marker(
+                [41.3213406, 69.2376486],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_b28dd0010bf3d1ec47e9876e799f1713 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1aa19ed281c05411f4988553d24393f = $(`<div id="html_d1aa19ed281c05411f4988553d24393f" style="width: 100.0%; height: 100.0%;">Toshkent savdo markazi</div>`)[0];
+                popup_b28dd0010bf3d1ec47e9876e799f1713.setContent(html_d1aa19ed281c05411f4988553d24393f);
+            
+        
+
+        marker_1de6a25978a3281a729b574f495775e6.bindPopup(popup_b28dd0010bf3d1ec47e9876e799f1713)
+        ;
+
+        
+    
+    
+            var marker_bb5078af66c7a1a48fbc2148412bfcf9 = L.marker(
+                [41.3266193, 69.3134715],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_16f34c192f834204429d32858e92007d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2172fa4d537ddc5a0d46d1d378b22366 = $(`<div id="html_2172fa4d537ddc5a0d46d1d378b22366" style="width: 100.0%; height: 100.0%;">OASIS business centre</div>`)[0];
+                popup_16f34c192f834204429d32858e92007d.setContent(html_2172fa4d537ddc5a0d46d1d378b22366);
+            
+        
+
+        marker_bb5078af66c7a1a48fbc2148412bfcf9.bindPopup(popup_16f34c192f834204429d32858e92007d)
+        ;
+
+        
+    
+    
+            var marker_1c1d389982d36ef5fa7d9e9172487938 = L.marker(
+                [41.3682191, 69.2863415],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_b8dbd5af3d6d31745b24108c5dae6cae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c920723d983ba55c421d1b43ac3ec43 = $(`<div id="html_8c920723d983ba55c421d1b43ac3ec43" style="width: 100.0%; height: 100.0%;">Hamroh Savdo</div>`)[0];
+                popup_b8dbd5af3d6d31745b24108c5dae6cae.setContent(html_8c920723d983ba55c421d1b43ac3ec43);
+            
+        
+
+        marker_1c1d389982d36ef5fa7d9e9172487938.bindPopup(popup_b8dbd5af3d6d31745b24108c5dae6cae)
+        ;
+
+        
+    
+    
+            var marker_ca380fa65e5f8290cc655a66acfb2e0e = L.marker(
+                [41.2760943, 69.2012494],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_3be5a33cbc65a78869856449a1212ae5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_899d51fcf07f235871d4a656fc62c881 = $(`<div id="html_899d51fcf07f235871d4a656fc62c881" style="width: 100.0%; height: 100.0%;">AKLA обувная сеть</div>`)[0];
+                popup_3be5a33cbc65a78869856449a1212ae5.setContent(html_899d51fcf07f235871d4a656fc62c881);
+            
+        
+
+        marker_ca380fa65e5f8290cc655a66acfb2e0e.bindPopup(popup_3be5a33cbc65a78869856449a1212ae5)
+        ;
+
+        
+    
+    
+            var marker_7e5d029c2fa5fe4e9bfdce7b542283bd = L.marker(
+                [41.2930954, 69.2232173],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_f1652f9da132bc4149b76f908ab7d870 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d07330b5a1b16d7b62c07f8c50407e27 = $(`<div id="html_d07330b5a1b16d7b62c07f8c50407e27" style="width: 100.0%; height: 100.0%;">GOLDEN CENTER</div>`)[0];
+                popup_f1652f9da132bc4149b76f908ab7d870.setContent(html_d07330b5a1b16d7b62c07f8c50407e27);
+            
+        
+
+        marker_7e5d029c2fa5fe4e9bfdce7b542283bd.bindPopup(popup_f1652f9da132bc4149b76f908ab7d870)
+        ;
+
+        
+    
+    
+            var marker_7cbb0be997f3ba5b2c7ea94fe4f31d3a = L.marker(
+                [41.2813807, 69.3038636],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_b0bfb4593ea81c51806e03e9508e74cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0338302e80ce0408e5e754500ded22c2 = $(`<div id="html_0338302e80ce0408e5e754500ded22c2" style="width: 100.0%; height: 100.0%;">Xoztavar magazin</div>`)[0];
+                popup_b0bfb4593ea81c51806e03e9508e74cd.setContent(html_0338302e80ce0408e5e754500ded22c2);
+            
+        
+
+        marker_7cbb0be997f3ba5b2c7ea94fe4f31d3a.bindPopup(popup_b0bfb4593ea81c51806e03e9508e74cd)
+        ;
+
+        
+    
+    
+            var marker_ce98c5b0294e626b2aa7f714cc211d76 = L.marker(
+                [41.3109229, 69.1509288],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_c269c2861a5bff7ff4755539160bf611 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_408a1275b835e87b1f4e626a5bca9866 = $(`<div id="html_408a1275b835e87b1f4e626a5bca9866" style="width: 100.0%; height: 100.0%;">Dimax Sanoat Savdo Markazi</div>`)[0];
+                popup_c269c2861a5bff7ff4755539160bf611.setContent(html_408a1275b835e87b1f4e626a5bca9866);
+            
+        
+
+        marker_ce98c5b0294e626b2aa7f714cc211d76.bindPopup(popup_c269c2861a5bff7ff4755539160bf611)
+        ;
+
+        
+    
+    
+            var marker_d3ffbeffc28bf7176db46fd5832165f2 = L.marker(
+                [41.2931698, 69.2126119],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_988d478176628d9ed2ca56b748afed7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c65d4cfe8d1efbd693cd20b2b005139 = $(`<div id="html_4c65d4cfe8d1efbd693cd20b2b005139" style="width: 100.0%; height: 100.0%;">BABY and MOM shop</div>`)[0];
+                popup_988d478176628d9ed2ca56b748afed7f.setContent(html_4c65d4cfe8d1efbd693cd20b2b005139);
+            
+        
+
+        marker_d3ffbeffc28bf7176db46fd5832165f2.bindPopup(popup_988d478176628d9ed2ca56b748afed7f)
+        ;
+
+        
+    
+    
+            var marker_bc08013cf2e9102e8887556338f21d14 = L.marker(
+                [41.3387288, 69.2718095],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_d1b6df5c402fb3edbc475730f40a54de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e8b2b4fa68bb2721f19363bee0be677 = $(`<div id="html_8e8b2b4fa68bb2721f19363bee0be677" style="width: 100.0%; height: 100.0%;">Малика магазин - техники</div>`)[0];
+                popup_d1b6df5c402fb3edbc475730f40a54de.setContent(html_8e8b2b4fa68bb2721f19363bee0be677);
+            
+        
+
+        marker_bc08013cf2e9102e8887556338f21d14.bindPopup(popup_d1b6df5c402fb3edbc475730f40a54de)
+        ;
+
+        
+    
+    
+            var marker_d21510f07942f3604e2d450c011a788a = L.marker(
+                [41.3219787, 69.2080222],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_98215c356e2a12283b03034f2ae6ec13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45279845fbe594b3960eb3d346e9485f = $(`<div id="html_45279845fbe594b3960eb3d346e9485f" style="width: 100.0%; height: 100.0%;">XUMORA-art collection</div>`)[0];
+                popup_98215c356e2a12283b03034f2ae6ec13.setContent(html_45279845fbe594b3960eb3d346e9485f);
+            
+        
+
+        marker_d21510f07942f3604e2d450c011a788a.bindPopup(popup_98215c356e2a12283b03034f2ae6ec13)
+        ;
+
+        
+    
+    
+            var marker_187729d5ae0c9afebf20179dc42f6b2a = L.marker(
+                [41.3079579, 69.2664623],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_351c049a6fc5e66ca172b6d842832d09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ad6bd4f100d22e416dd5d70b4d609e2 = $(`<div id="html_4ad6bd4f100d22e416dd5d70b4d609e2" style="width: 100.0%; height: 100.0%;">Nico’s hair cut</div>`)[0];
+                popup_351c049a6fc5e66ca172b6d842832d09.setContent(html_4ad6bd4f100d22e416dd5d70b4d609e2);
+            
+        
+
+        marker_187729d5ae0c9afebf20179dc42f6b2a.bindPopup(popup_351c049a6fc5e66ca172b6d842832d09)
+        ;
+
+        
+    
+    
+            var marker_933982c9325f88ce9694496cb0c1969d = L.marker(
+                [41.3213756, 69.247955],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_13998b3d040dcf718e4270783b3760b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a960e7e9c87de3b92968020d2d3458e7 = $(`<div id="html_a960e7e9c87de3b92968020d2d3458e7" style="width: 100.0%; height: 100.0%;">Ottenko Markazo</div>`)[0];
+                popup_13998b3d040dcf718e4270783b3760b9.setContent(html_a960e7e9c87de3b92968020d2d3458e7);
+            
+        
+
+        marker_933982c9325f88ce9694496cb0c1969d.bindPopup(popup_13998b3d040dcf718e4270783b3760b9)
+        ;
+
+        
+    
+    
+            var marker_ae431462863438c88c29bf920b460380 = L.marker(
+                [41.2978047, 69.2495917],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_b436044626fc9627a7e572d82f53505f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9738071871bd182d89fec4cfb028b86 = $(`<div id="html_e9738071871bd182d89fec4cfb028b86" style="width: 100.0%; height: 100.0%;">Basconi.uz</div>`)[0];
+                popup_b436044626fc9627a7e572d82f53505f.setContent(html_e9738071871bd182d89fec4cfb028b86);
+            
+        
+
+        marker_ae431462863438c88c29bf920b460380.bindPopup(popup_b436044626fc9627a7e572d82f53505f)
+        ;
+
+        
+    
+    
+            var marker_19cae337b74ac5eeb203d385d01b1b59 = L.marker(
+                [41.3481521, 69.2476556],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_c447563940aa7f730cab27cc1d7018ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_432e1aea5c76633c36508be5a002b7d9 = $(`<div id="html_432e1aea5c76633c36508be5a002b7d9" style="width: 100.0%; height: 100.0%;">Тапочки</div>`)[0];
+                popup_c447563940aa7f730cab27cc1d7018ba.setContent(html_432e1aea5c76633c36508be5a002b7d9);
+            
+        
+
+        marker_19cae337b74ac5eeb203d385d01b1b59.bindPopup(popup_c447563940aa7f730cab27cc1d7018ba)
+        ;
+
+        
+    
+    
+            var marker_f67b318015db487d505f7676ea0db45c = L.marker(
+                [41.3224831, 69.2434725],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_5190393e9957aa99825b0a90617d27c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_867c8d67c53c79b9ee7ae80170d1e690 = $(`<div id="html_867c8d67c53c79b9ee7ae80170d1e690" style="width: 100.0%; height: 100.0%;">Azor Device</div>`)[0];
+                popup_5190393e9957aa99825b0a90617d27c1.setContent(html_867c8d67c53c79b9ee7ae80170d1e690);
+            
+        
+
+        marker_f67b318015db487d505f7676ea0db45c.bindPopup(popup_5190393e9957aa99825b0a90617d27c1)
+        ;
+
+        
+    
+    
+            var marker_be7c2a09ef6144ff2c59f7b34151d6f0 = L.marker(
+                [41.259418, 69.1804708],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_61b3baf1a6cee4dbb6f39dde3d7a7ec2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00f51cbe2e7db8273a4b8e3003bfc7a4 = $(`<div id="html_00f51cbe2e7db8273a4b8e3003bfc7a4" style="width: 100.0%; height: 100.0%;">Тошкент</div>`)[0];
+                popup_61b3baf1a6cee4dbb6f39dde3d7a7ec2.setContent(html_00f51cbe2e7db8273a4b8e3003bfc7a4);
+            
+        
+
+        marker_be7c2a09ef6144ff2c59f7b34151d6f0.bindPopup(popup_61b3baf1a6cee4dbb6f39dde3d7a7ec2)
+        ;
+
+        
+    
+    
+            var marker_8706267cf51271bee33d6c8d1ed2c032 = L.marker(
+                [41.2866606, 69.1497757],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_60046a6f045e384048d11cbc3b9f7b34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5419eb316c5b23202495c784177dc661 = $(`<div id="html_5419eb316c5b23202495c784177dc661" style="width: 100.0%; height: 100.0%;">"O'rikzor savdo kompleksi" MChJ (Урикзар базар)</div>`)[0];
+                popup_60046a6f045e384048d11cbc3b9f7b34.setContent(html_5419eb316c5b23202495c784177dc661);
+            
+        
+
+        marker_8706267cf51271bee33d6c8d1ed2c032.bindPopup(popup_60046a6f045e384048d11cbc3b9f7b34)
+        ;
+
+        
+    
+    
+            var marker_4c3401e7f331c9324878283cb30d501d = L.marker(
+                [41.3634461, 69.230113],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_bb03f3be716eee2b840c602f1ced321f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a40ddd270c13a5637efe4480b1c351f = $(`<div id="html_6a40ddd270c13a5637efe4480b1c351f" style="width: 100.0%; height: 100.0%;">Торговый центр new planet</div>`)[0];
+                popup_bb03f3be716eee2b840c602f1ced321f.setContent(html_6a40ddd270c13a5637efe4480b1c351f);
+            
+        
+
+        marker_4c3401e7f331c9324878283cb30d501d.bindPopup(popup_bb03f3be716eee2b840c602f1ced321f)
+        ;
+
+        
+    
+    
+            var marker_18a00e5943f06556d4e45ff3d2764937 = L.marker(
+                [41.2977179, 69.2792102],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_c2b70e58218157f7278b0b46f8a7ff07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a59b2e7397f41cad693da253dd94a63d = $(`<div id="html_a59b2e7397f41cad693da253dd94a63d" style="width: 100.0%; height: 100.0%;">DECOR CENTER</div>`)[0];
+                popup_c2b70e58218157f7278b0b46f8a7ff07.setContent(html_a59b2e7397f41cad693da253dd94a63d);
+            
+        
+
+        marker_18a00e5943f06556d4e45ff3d2764937.bindPopup(popup_c2b70e58218157f7278b0b46f8a7ff07)
+        ;
+
+        
+    
+    
+            var marker_b4630b470f3c21b03dfbe7d378da140e = L.marker(
+                [41.3244147, 69.2815028],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_ba3fa5551366b87d21bae417c65bb8f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6574b122e4f27016fbcd517a6b4e600 = $(`<div id="html_d6574b122e4f27016fbcd517a6b4e600" style="width: 100.0%; height: 100.0%;">Бутик Гималайской Соли Saltland</div>`)[0];
+                popup_ba3fa5551366b87d21bae417c65bb8f4.setContent(html_d6574b122e4f27016fbcd517a6b4e600);
+            
+        
+
+        marker_b4630b470f3c21b03dfbe7d378da140e.bindPopup(popup_ba3fa5551366b87d21bae417c65bb8f4)
+        ;
+
+        
+    
+    
+            var marker_b8ebb3d19bf660bda2aca2a04549d7c4 = L.marker(
+                [41.2703953, 69.2006336],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_aa71aa1fca54bff76b68a317fcf737af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee5a969b53fe0839e6c7c63863e6c556 = $(`<div id="html_ee5a969b53fe0839e6c7c63863e6c556" style="width: 100.0%; height: 100.0%;">Бинкат</div>`)[0];
+                popup_aa71aa1fca54bff76b68a317fcf737af.setContent(html_ee5a969b53fe0839e6c7c63863e6c556);
+            
+        
+
+        marker_b8ebb3d19bf660bda2aca2a04549d7c4.bindPopup(popup_aa71aa1fca54bff76b68a317fcf737af)
+        ;
+
+        
+    
+    
+            var marker_dc76c0216f8b6d3294aaa9e282b31e5e = L.marker(
+                [41.2888727, 69.151183],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_d89adcdae840e0000769566b903eb60f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b60c509e2503c9e33ebd281ea0d12651 = $(`<div id="html_b60c509e2503c9e33ebd281ea0d12651" style="width: 100.0%; height: 100.0%;">EPA</div>`)[0];
+                popup_d89adcdae840e0000769566b903eb60f.setContent(html_b60c509e2503c9e33ebd281ea0d12651);
+            
+        
+
+        marker_dc76c0216f8b6d3294aaa9e282b31e5e.bindPopup(popup_d89adcdae840e0000769566b903eb60f)
+        ;
+
+        
+    
+    
+            var marker_5a54dff2f4143e13574aa6a2def84943 = L.marker(
+                [41.2857796, 69.2546056],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_7cf349fb2336d3b59a800576b156c0ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f14591b497b0d04f7304474ca16f68a5 = $(`<div id="html_f14591b497b0d04f7304474ca16f68a5" style="width: 100.0%; height: 100.0%;">Западня Квест Рум @quest.zapadnya</div>`)[0];
+                popup_7cf349fb2336d3b59a800576b156c0ff.setContent(html_f14591b497b0d04f7304474ca16f68a5);
+            
+        
+
+        marker_5a54dff2f4143e13574aa6a2def84943.bindPopup(popup_7cf349fb2336d3b59a800576b156c0ff)
+        ;
+
+        
+    
+    
+            var marker_0467c496140dd72618fad2dfeeb91199 = L.marker(
+                [41.3403871, 69.2300748],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_7994cf3255494954ff3862b3f2c3a316 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb6c6964205402b0b96c1577e6dd8531 = $(`<div id="html_cb6c6964205402b0b96c1577e6dd8531" style="width: 100.0%; height: 100.0%;">Kalde Nurafshon</div>`)[0];
+                popup_7994cf3255494954ff3862b3f2c3a316.setContent(html_cb6c6964205402b0b96c1577e6dd8531);
+            
+        
+
+        marker_0467c496140dd72618fad2dfeeb91199.bindPopup(popup_7994cf3255494954ff3862b3f2c3a316)
+        ;
+
+        
+    
+    
+            var marker_59ac3cc22df10f9a374cb15486ba5b5a = L.marker(
+                [41.3566223, 69.1295368],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_b66a7ea0cb3485460737191bf84ae4f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73751d3a7479f125f335e32feebafeef = $(`<div id="html_73751d3a7479f125f335e32feebafeef" style="width: 100.0%; height: 100.0%;">Олтин тепа</div>`)[0];
+                popup_b66a7ea0cb3485460737191bf84ae4f7.setContent(html_73751d3a7479f125f335e32feebafeef);
+            
+        
+
+        marker_59ac3cc22df10f9a374cb15486ba5b5a.bindPopup(popup_b66a7ea0cb3485460737191bf84ae4f7)
+        ;
+
+        
+    
+    
+            var marker_68afd1d85795292fdff2f3ed00fe3a21 = L.marker(
+                [41.3390472, 69.2856756],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_b7232ba390dda3d3d83ad8ec88410763 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3cc74947ac273c7a175174387d03a54 = $(`<div id="html_b3cc74947ac273c7a175174387d03a54" style="width: 100.0%; height: 100.0%;">Kyocera</div>`)[0];
+                popup_b7232ba390dda3d3d83ad8ec88410763.setContent(html_b3cc74947ac273c7a175174387d03a54);
+            
+        
+
+        marker_68afd1d85795292fdff2f3ed00fe3a21.bindPopup(popup_b7232ba390dda3d3d83ad8ec88410763)
+        ;
+
+        
+    
+    
+            var marker_05427a7d60bd73c12f3a6bf2311c5fc3 = L.marker(
+                [41.3632823, 69.2876688],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_0baeb81d8e564690d3723d9fed3b435b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdf04cc6d9b99bd7bf153c26624103e4 = $(`<div id="html_fdf04cc6d9b99bd7bf153c26624103e4" style="width: 100.0%; height: 100.0%;">KEFAYAT</div>`)[0];
+                popup_0baeb81d8e564690d3723d9fed3b435b.setContent(html_fdf04cc6d9b99bd7bf153c26624103e4);
+            
+        
+
+        marker_05427a7d60bd73c12f3a6bf2311c5fc3.bindPopup(popup_0baeb81d8e564690d3723d9fed3b435b)
+        ;
+
+        
+    
+    
+            var marker_8b7ea670db835633c02c7cf30e8e3b1b = L.marker(
+                [41.2713543, 69.2665776],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_32669afc8ce0a383e109cac0b61fb22d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2868f2ce60d02647f211e98be66208ea = $(`<div id="html_2868f2ce60d02647f211e98be66208ea" style="width: 100.0%; height: 100.0%;">OOO Premium Computers</div>`)[0];
+                popup_32669afc8ce0a383e109cac0b61fb22d.setContent(html_2868f2ce60d02647f211e98be66208ea);
+            
+        
+
+        marker_8b7ea670db835633c02c7cf30e8e3b1b.bindPopup(popup_32669afc8ce0a383e109cac0b61fb22d)
+        ;
+
+        
+    
+    
+            var marker_0b1d0cdc3beafbdd7122f1dee34177e7 = L.marker(
+                [41.2922363, 69.2109197],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_015bc79b8ee7dd38a899a90e7bf403b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fabb525eabc98beef8a3d15094ef40de = $(`<div id="html_fabb525eabc98beef8a3d15094ef40de" style="width: 100.0%; height: 100.0%;">TCHIBO в Ташкенте</div>`)[0];
+                popup_015bc79b8ee7dd38a899a90e7bf403b5.setContent(html_fabb525eabc98beef8a3d15094ef40de);
+            
+        
+
+        marker_0b1d0cdc3beafbdd7122f1dee34177e7.bindPopup(popup_015bc79b8ee7dd38a899a90e7bf403b5)
+        ;
+
+        
+    
+    
+            var marker_f666ac209a1e6ff1e7bead18751132c6 = L.marker(
+                [41.2666416, 69.3142741],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_f03661ebda52a22f3495b10ab4f843ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54fd56f81d86f2d93ea65fe0d7b080e5 = $(`<div id="html_54fd56f81d86f2d93ea65fe0d7b080e5" style="width: 100.0%; height: 100.0%;">botinka.uz</div>`)[0];
+                popup_f03661ebda52a22f3495b10ab4f843ee.setContent(html_54fd56f81d86f2d93ea65fe0d7b080e5);
+            
+        
+
+        marker_f666ac209a1e6ff1e7bead18751132c6.bindPopup(popup_f03661ebda52a22f3495b10ab4f843ee)
+        ;
+
+        
+    
+    
+            var marker_b1054430d8999fdd0937211517c4e2b3 = L.marker(
+                [41.2994958, 69.2400734],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_8155a5ba4dea9c01fd9cfd075bf1856d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d51f3a06753dc5202401e0891d0b399 = $(`<div id="html_1d51f3a06753dc5202401e0891d0b399" style="width: 100.0%; height: 100.0%;">OOO "Web Cream"</div>`)[0];
+                popup_8155a5ba4dea9c01fd9cfd075bf1856d.setContent(html_1d51f3a06753dc5202401e0891d0b399);
+            
+        
+
+        marker_b1054430d8999fdd0937211517c4e2b3.bindPopup(popup_8155a5ba4dea9c01fd9cfd075bf1856d)
+        ;
+
+        
+    
+    
+            var marker_b776ef3120a3ce6d5208ddfc1b38a1e5 = L.marker(
+                [41.2930893, 69.2228789],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_9d86f7c963188746d37bbf5ccd06216d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37be62764cd4c95fcc575692c0b815a5 = $(`<div id="html_37be62764cd4c95fcc575692c0b815a5" style="width: 100.0%; height: 100.0%;">Baxadirovna women shop</div>`)[0];
+                popup_9d86f7c963188746d37bbf5ccd06216d.setContent(html_37be62764cd4c95fcc575692c0b815a5);
+            
+        
+
+        marker_b776ef3120a3ce6d5208ddfc1b38a1e5.bindPopup(popup_9d86f7c963188746d37bbf5ccd06216d)
+        ;
+
+        
+    
+    
+            var marker_e248aabd9a40006dc82341bf8d873b25 = L.marker(
+                [41.2826138, 69.2389854],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_7cfa7299dd7718402d0c01641393f3df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79caf83479bc715c5292a022340e56bd = $(`<div id="html_79caf83479bc715c5292a022340e56bd" style="width: 100.0%; height: 100.0%;">Керхер Центр</div>`)[0];
+                popup_7cfa7299dd7718402d0c01641393f3df.setContent(html_79caf83479bc715c5292a022340e56bd);
+            
+        
+
+        marker_e248aabd9a40006dc82341bf8d873b25.bindPopup(popup_7cfa7299dd7718402d0c01641393f3df)
+        ;
+
+        
+    
+    
+            var marker_6385701ec9013d70bfe8a0978cc7c8f5 = L.marker(
+                [41.3474406, 69.2569019],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_6da8bfbe162b0c961cea71eea2931814 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d41fdd7b53e2a0f7bfad22994cf8022 = $(`<div id="html_4d41fdd7b53e2a0f7bfad22994cf8022" style="width: 100.0%; height: 100.0%;">Mobaks</div>`)[0];
+                popup_6da8bfbe162b0c961cea71eea2931814.setContent(html_4d41fdd7b53e2a0f7bfad22994cf8022);
+            
+        
+
+        marker_6385701ec9013d70bfe8a0978cc7c8f5.bindPopup(popup_6da8bfbe162b0c961cea71eea2931814)
+        ;
+
+        
+    
+    
+            var marker_af3a78b790ff96b386151365590bf025 = L.marker(
+                [41.283395, 69.1495869],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_89d7e98ce92897e28597313782a367f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43a6b2d2b9346a2171f44beff94143d6 = $(`<div id="html_43a6b2d2b9346a2171f44beff94143d6" style="width: 100.0%; height: 100.0%;">Òrikzor Shakar sklad</div>`)[0];
+                popup_89d7e98ce92897e28597313782a367f3.setContent(html_43a6b2d2b9346a2171f44beff94143d6);
+            
+        
+
+        marker_af3a78b790ff96b386151365590bf025.bindPopup(popup_89d7e98ce92897e28597313782a367f3)
+        ;
+
+        
+    
+    
+            var marker_9c89443afc083d8e6754309cc602c50f = L.marker(
+                [41.3258843, 69.2745557],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_73b3b30b3134fe4a67eb5894a28f18f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_303225fa2d9d25159fb9538abf964041 = $(`<div id="html_303225fa2d9d25159fb9538abf964041" style="width: 100.0%; height: 100.0%;">Joseph Joseph Uzbekistan магазин</div>`)[0];
+                popup_73b3b30b3134fe4a67eb5894a28f18f0.setContent(html_303225fa2d9d25159fb9538abf964041);
+            
+        
+
+        marker_9c89443afc083d8e6754309cc602c50f.bindPopup(popup_73b3b30b3134fe4a67eb5894a28f18f0)
+        ;
+
+        
+    
+    
+            var marker_f51c77fcd385048f49c77d4d64abec8f = L.marker(
+                [41.2918748, 69.2739121],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_cacb8e16abda006d72d40d0cb8cea058 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_563a966b6e1d2c79ee1cc280e89a1f15 = $(`<div id="html_563a966b6e1d2c79ee1cc280e89a1f15" style="width: 100.0%; height: 100.0%;">Deli.uz</div>`)[0];
+                popup_cacb8e16abda006d72d40d0cb8cea058.setContent(html_563a966b6e1d2c79ee1cc280e89a1f15);
+            
+        
+
+        marker_f51c77fcd385048f49c77d4d64abec8f.bindPopup(popup_cacb8e16abda006d72d40d0cb8cea058)
+        ;
+
+        
+    
+    
+            var marker_09aa06935e7882d8830cfc4a98063e8d = L.marker(
+                [41.2854279, 69.1510411],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_e55fd0c004db35ec6c2c40abc0e83a51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17f9892efc37b8ed7e0c20dc3bce5314 = $(`<div id="html_17f9892efc37b8ed7e0c20dc3bce5314" style="width: 100.0%; height: 100.0%;">Продуктовый ряд</div>`)[0];
+                popup_e55fd0c004db35ec6c2c40abc0e83a51.setContent(html_17f9892efc37b8ed7e0c20dc3bce5314);
+            
+        
+
+        marker_09aa06935e7882d8830cfc4a98063e8d.bindPopup(popup_e55fd0c004db35ec6c2c40abc0e83a51)
+        ;
+
+        
+    
+    
+            var marker_17e82871af7f73dec706d8c1e34ef85c = L.marker(
+                [41.356027, 69.2530377],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_12b46642aaede74e0df2a433fb12c343 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c971edd81ecf26952b69e52b574e00c8 = $(`<div id="html_c971edd81ecf26952b69e52b574e00c8" style="width: 100.0%; height: 100.0%;">RoyalMebel.Uz кухня кухонная мебель в Ташкенте Toshkent oshxona mebeli</div>`)[0];
+                popup_12b46642aaede74e0df2a433fb12c343.setContent(html_c971edd81ecf26952b69e52b574e00c8);
+            
+        
+
+        marker_17e82871af7f73dec706d8c1e34ef85c.bindPopup(popup_12b46642aaede74e0df2a433fb12c343)
+        ;
+
+        
+    
+    
+            var marker_681fb64ea08f6f396672f3402d78b9bd = L.marker(
+                [41.2865793, 69.2715213],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_a0df766d11961ccb1df02617c16d82cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1813ea721ef7cc61a1972d83fadec5e0 = $(`<div id="html_1813ea721ef7cc61a1972d83fadec5e0" style="width: 100.0%; height: 100.0%;">makro glinka</div>`)[0];
+                popup_a0df766d11961ccb1df02617c16d82cd.setContent(html_1813ea721ef7cc61a1972d83fadec5e0);
+            
+        
+
+        marker_681fb64ea08f6f396672f3402d78b9bd.bindPopup(popup_a0df766d11961ccb1df02617c16d82cd)
+        ;
+
+        
+    
+    
+            var marker_512172515eb0539be5a845db9eb19b3d = L.marker(
+                [41.289957, 69.2961068],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_0e5c13ebbd9d119a677bdf40c623ed1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7745c7c63ad0ef33d52ef3b9c75d10c9 = $(`<div id="html_7745c7c63ad0ef33d52ef3b9c75d10c9" style="width: 100.0%; height: 100.0%;">Alfraganus</div>`)[0];
+                popup_0e5c13ebbd9d119a677bdf40c623ed1c.setContent(html_7745c7c63ad0ef33d52ef3b9c75d10c9);
+            
+        
+
+        marker_512172515eb0539be5a845db9eb19b3d.bindPopup(popup_0e5c13ebbd9d119a677bdf40c623ed1c)
+        ;
+
+        
+    
+    
+            var marker_e6c886947c8b8f48656afa6b17b47351 = L.marker(
+                [41.3052221, 69.2898134],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_7a3f8bf60b8939c0b2a9bed81bd5e77a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b5379cdb4cd756c5d64c7b137e91aa7 = $(`<div id="html_7b5379cdb4cd756c5d64c7b137e91aa7" style="width: 100.0%; height: 100.0%;">Dovucha</div>`)[0];
+                popup_7a3f8bf60b8939c0b2a9bed81bd5e77a.setContent(html_7b5379cdb4cd756c5d64c7b137e91aa7);
+            
+        
+
+        marker_e6c886947c8b8f48656afa6b17b47351.bindPopup(popup_7a3f8bf60b8939c0b2a9bed81bd5e77a)
+        ;
+
+        
+    
+    
+            var marker_f7a87db1a669e4e60da7874918833e02 = L.marker(
+                [41.286097, 69.2561687],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_6390ab34fd2126fe2f10855e0bf65033 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02c41d0c168f90a912061a8af0d4161a = $(`<div id="html_02c41d0c168f90a912061a8af0d4161a" style="width: 100.0%; height: 100.0%;">EL BAZAR GROUP</div>`)[0];
+                popup_6390ab34fd2126fe2f10855e0bf65033.setContent(html_02c41d0c168f90a912061a8af0d4161a);
+            
+        
+
+        marker_f7a87db1a669e4e60da7874918833e02.bindPopup(popup_6390ab34fd2126fe2f10855e0bf65033)
+        ;
+
+        
+    
+    
+            var marker_ad46ceb42f358520245bc573eda65786 = L.marker(
+                [41.2880986, 69.2200241],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_194237647bc21c273dcff13cf6c49a4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_416022544bbee28a28365fc3e8698c66 = $(`<div id="html_416022544bbee28a28365fc3e8698c66" style="width: 100.0%; height: 100.0%;">SP PHONE (HAMZA)</div>`)[0];
+                popup_194237647bc21c273dcff13cf6c49a4f.setContent(html_416022544bbee28a28365fc3e8698c66);
+            
+        
+
+        marker_ad46ceb42f358520245bc573eda65786.bindPopup(popup_194237647bc21c273dcff13cf6c49a4f)
+        ;
+
+        
+    
+    
+            var marker_ee76a34f25eb2128c50fce4ff2dd87e6 = L.marker(
+                [41.3343562, 69.264359],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_ca3c3e6b3bc82e5daf052ca351e62c45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5fa21eb315f4d8166def8702bbd28d7 = $(`<div id="html_d5fa21eb315f4d8166def8702bbd28d7" style="width: 100.0%; height: 100.0%;">G‘afur G‘ulom nomidagi NMIU</div>`)[0];
+                popup_ca3c3e6b3bc82e5daf052ca351e62c45.setContent(html_d5fa21eb315f4d8166def8702bbd28d7);
+            
+        
+
+        marker_ee76a34f25eb2128c50fce4ff2dd87e6.bindPopup(popup_ca3c3e6b3bc82e5daf052ca351e62c45)
+        ;
+
+        
+    
+    
+            var marker_cf1a81eeef43dcaa17aa14ba67dd98c1 = L.marker(
+                [41.3550089, 69.247652],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_195e156402b12dbcd7d93af5050483c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fee14951a8a07c37d4eca54941356c99 = $(`<div id="html_fee14951a8a07c37d4eca54941356c99" style="width: 100.0%; height: 100.0%;">Мир Таркета И Декора</div>`)[0];
+                popup_195e156402b12dbcd7d93af5050483c4.setContent(html_fee14951a8a07c37d4eca54941356c99);
+            
+        
+
+        marker_cf1a81eeef43dcaa17aa14ba67dd98c1.bindPopup(popup_195e156402b12dbcd7d93af5050483c4)
+        ;
+
+        
+    
+    
+            var marker_a9790f7c5e4715896b65312f2b316e96 = L.marker(
+                [41.338977, 69.2690425],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_340f17b5bf7b469c4dc240dcf959c254 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76121bb6a03fa007e705607f7f4c15bd = $(`<div id="html_76121bb6a03fa007e705607f7f4c15bd" style="width: 100.0%; height: 100.0%;">Texno olam Minor</div>`)[0];
+                popup_340f17b5bf7b469c4dc240dcf959c254.setContent(html_76121bb6a03fa007e705607f7f4c15bd);
+            
+        
+
+        marker_a9790f7c5e4715896b65312f2b316e96.bindPopup(popup_340f17b5bf7b469c4dc240dcf959c254)
+        ;
+
+        
+    
+    
+            var marker_49785a2e4cb68205af53c9ee148bcf7d = L.marker(
+                [41.3632717, 69.275033],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_23f31701dda4ce4b011ddee793f67cb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6aa32cff9e2505db5814f72e993329b4 = $(`<div id="html_6aa32cff9e2505db5814f72e993329b4" style="width: 100.0%; height: 100.0%;">Feniks toys</div>`)[0];
+                popup_23f31701dda4ce4b011ddee793f67cb1.setContent(html_6aa32cff9e2505db5814f72e993329b4);
+            
+        
+
+        marker_49785a2e4cb68205af53c9ee148bcf7d.bindPopup(popup_23f31701dda4ce4b011ddee793f67cb1)
+        ;
+
+        
+    
+    
+            var marker_fc853e22b4f78ed59813b0806e0110a9 = L.marker(
+                [41.3264552, 69.3049597],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_a8020edb331dcb36aa67759d43fd4393 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8cdcea311122afce361dee20234438cd = $(`<div id="html_8cdcea311122afce361dee20234438cd" style="width: 100.0%; height: 100.0%;">Омонуллахожи Ателье Моди</div>`)[0];
+                popup_a8020edb331dcb36aa67759d43fd4393.setContent(html_8cdcea311122afce361dee20234438cd);
+            
+        
+
+        marker_fc853e22b4f78ed59813b0806e0110a9.bindPopup(popup_a8020edb331dcb36aa67759d43fd4393)
+        ;
+
+        
+    
+    
+            var marker_80570a3243ae596a66de3dd5b7c967ce = L.marker(
+                [41.3113915, 69.2747805],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_b054f29cb49e1cbd2a66636f1ea200d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84c99fcfe07696202f9a1d4cd9eb3549 = $(`<div id="html_84c99fcfe07696202f9a1d4cd9eb3549" style="width: 100.0%; height: 100.0%;">Modamix_shoes</div>`)[0];
+                popup_b054f29cb49e1cbd2a66636f1ea200d5.setContent(html_84c99fcfe07696202f9a1d4cd9eb3549);
+            
+        
+
+        marker_80570a3243ae596a66de3dd5b7c967ce.bindPopup(popup_b054f29cb49e1cbd2a66636f1ea200d5)
+        ;
+
+        
+    
+    
+            var marker_728c1d09428c719ef74a7e6a62001354 = L.marker(
+                [41.3254589, 69.2340884],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_37ea6de33a01121c83381d3d79d15321 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e22954f35ec014e15bcdb96582d8719 = $(`<div id="html_0e22954f35ec014e15bcdb96582d8719" style="width: 100.0%; height: 100.0%;">Oltin Gumbaz</div>`)[0];
+                popup_37ea6de33a01121c83381d3d79d15321.setContent(html_0e22954f35ec014e15bcdb96582d8719);
+            
+        
+
+        marker_728c1d09428c719ef74a7e6a62001354.bindPopup(popup_37ea6de33a01121c83381d3d79d15321)
+        ;
+
+        
+    
+    
+            var marker_f0877b1b8d4ac676aedff1f4eb423afb = L.marker(
+                [41.3123223, 69.2735131],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_312babd0834fbc0e472e300767cc29a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf3a6cd1d8f014aabe584265f60a7aed = $(`<div id="html_bf3a6cd1d8f014aabe584265f60a7aed" style="width: 100.0%; height: 100.0%;">BUYSPORT кроссовки, обувь</div>`)[0];
+                popup_312babd0834fbc0e472e300767cc29a9.setContent(html_bf3a6cd1d8f014aabe584265f60a7aed);
+            
+        
+
+        marker_f0877b1b8d4ac676aedff1f4eb423afb.bindPopup(popup_312babd0834fbc0e472e300767cc29a9)
+        ;
+
+        
+    
+    
+            var marker_90c07f0a929911627d2d7f45d3449a66 = L.marker(
+                [41.2865252, 69.1518555],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_a64dd485f02d42d4f72f30a1ad74b629 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed02e6f17df1a51d77fb887d322b45d0 = $(`<div id="html_ed02e6f17df1a51d77fb887d322b45d0" style="width: 100.0%; height: 100.0%;">Центр одежды, Продукты питания и Хозяйственные товары</div>`)[0];
+                popup_a64dd485f02d42d4f72f30a1ad74b629.setContent(html_ed02e6f17df1a51d77fb887d322b45d0);
+            
+        
+
+        marker_90c07f0a929911627d2d7f45d3449a66.bindPopup(popup_a64dd485f02d42d4f72f30a1ad74b629)
+        ;
+
+        
+    
+    
+            var marker_a0255ce75e75f903d362741b11a77f00 = L.marker(
+                [41.3115969, 69.1486705],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_fb6eba4b8681a85b98ac296bd0bf44a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_737723d5cd3e17b9098dc1837da6a242 = $(`<div id="html_737723d5cd3e17b9098dc1837da6a242" style="width: 100.0%; height: 100.0%;">Metall Center - Филиал</div>`)[0];
+                popup_fb6eba4b8681a85b98ac296bd0bf44a5.setContent(html_737723d5cd3e17b9098dc1837da6a242);
+            
+        
+
+        marker_a0255ce75e75f903d362741b11a77f00.bindPopup(popup_fb6eba4b8681a85b98ac296bd0bf44a5)
+        ;
+
+        
+    
+    
+            var marker_713c84e0b60e3f80b6d5b574a99c6156 = L.marker(
+                [41.3250515, 69.1560598],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_c580dfb973928928b34a27a3a62dbb7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a38d5c6193c038af9f4eed437b7a45a0 = $(`<div id="html_a38d5c6193c038af9f4eed437b7a45a0" style="width: 100.0%; height: 100.0%;">ТОМ МАРКАЗИ premium. Profnastil Lazer hizmati</div>`)[0];
+                popup_c580dfb973928928b34a27a3a62dbb7c.setContent(html_a38d5c6193c038af9f4eed437b7a45a0);
+            
+        
+
+        marker_713c84e0b60e3f80b6d5b574a99c6156.bindPopup(popup_c580dfb973928928b34a27a3a62dbb7c)
+        ;
+
+        
+    
+    
+            var marker_78187012a81fe73660812e2349e35380 = L.marker(
+                [41.2953898, 69.2692608],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_9af237b4b16811ab8ec34e63b6de5b6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40c6edcea685bf7e97981cd2b68e1301 = $(`<div id="html_40c6edcea685bf7e97981cd2b68e1301" style="width: 100.0%; height: 100.0%;">UZBEK-INDONESIAN TRADING HOUSE</div>`)[0];
+                popup_9af237b4b16811ab8ec34e63b6de5b6e.setContent(html_40c6edcea685bf7e97981cd2b68e1301);
+            
+        
+
+        marker_78187012a81fe73660812e2349e35380.bindPopup(popup_9af237b4b16811ab8ec34e63b6de5b6e)
+        ;
+
+        
+    
+    
+            var marker_19f29dbf444b41a30da92d68284da5a7 = L.marker(
+                [41.2863322, 69.1508893],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_a55cea52547a8e7ef72617d52f25f07e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff48cf6bc9cdf6a33d07fbfa6a4e9d92 = $(`<div id="html_ff48cf6bc9cdf6a33d07fbfa6a4e9d92" style="width: 100.0%; height: 100.0%;">Koshelki Klatchi 2-blok 17-doʻkon</div>`)[0];
+                popup_a55cea52547a8e7ef72617d52f25f07e.setContent(html_ff48cf6bc9cdf6a33d07fbfa6a4e9d92);
+            
+        
+
+        marker_19f29dbf444b41a30da92d68284da5a7.bindPopup(popup_a55cea52547a8e7ef72617d52f25f07e)
+        ;
+
+        
+    
+    
+            var marker_f1ea524bf7c19f30384c01e6a2cc4a67 = L.marker(
+                [41.3383302, 69.2724347],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_0e7fd648168606504f212ecbfbffada0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e011f8bae3f94794434b1366281638d = $(`<div id="html_6e011f8bae3f94794434b1366281638d" style="width: 100.0%; height: 100.0%;">Expert Kompyuter A35</div>`)[0];
+                popup_0e7fd648168606504f212ecbfbffada0.setContent(html_6e011f8bae3f94794434b1366281638d);
+            
+        
+
+        marker_f1ea524bf7c19f30384c01e6a2cc4a67.bindPopup(popup_0e7fd648168606504f212ecbfbffada0)
+        ;
+
+        
+    
+    
+            var marker_a3c52fcdeb66143744bd1255b10c6ff5 = L.marker(
+                [41.3549921, 69.2453238],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_ee3aa9c4dc493dc44e3c0d774babc3fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aba29ced0a7b50455bdf503401adb096 = $(`<div id="html_aba29ced0a7b50455bdf503401adb096" style="width: 100.0%; height: 100.0%;">INVEST PROJECT</div>`)[0];
+                popup_ee3aa9c4dc493dc44e3c0d774babc3fe.setContent(html_aba29ced0a7b50455bdf503401adb096);
+            
+        
+
+        marker_a3c52fcdeb66143744bd1255b10c6ff5.bindPopup(popup_ee3aa9c4dc493dc44e3c0d774babc3fe)
+        ;
+
+        
+    
+    
+            var marker_fd292c063d0a1dffa511666fc133d198 = L.marker(
+                [41.2732854, 69.1515402],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_94a08c339780d69409308c914bedb76c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ab0d678ad905e852bb93f9cc5c66d7c = $(`<div id="html_5ab0d678ad905e852bb93f9cc5c66d7c" style="width: 100.0%; height: 100.0%;">AKSESSUAR55</div>`)[0];
+                popup_94a08c339780d69409308c914bedb76c.setContent(html_5ab0d678ad905e852bb93f9cc5c66d7c);
+            
+        
+
+        marker_fd292c063d0a1dffa511666fc133d198.bindPopup(popup_94a08c339780d69409308c914bedb76c)
+        ;
+
+        
+    
+    
+            var marker_605eb8269319dec8240e4bdd1bc86c2b = L.marker(
+                [41.3716397, 69.3120413],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_ad5bcf5f26e5d340eebe5dd9cadc2f66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dce2553ea1934fbc9dbd1f0ed5abbfd8 = $(`<div id="html_dce2553ea1934fbc9dbd1f0ed5abbfd8" style="width: 100.0%; height: 100.0%;">YASKANAMU ATLAS SAYRAM</div>`)[0];
+                popup_ad5bcf5f26e5d340eebe5dd9cadc2f66.setContent(html_dce2553ea1934fbc9dbd1f0ed5abbfd8);
+            
+        
+
+        marker_605eb8269319dec8240e4bdd1bc86c2b.bindPopup(popup_ad5bcf5f26e5d340eebe5dd9cadc2f66)
+        ;
+
+        
+    
+    
+            var marker_967c49d9661730137f86fbce4c6b5d4b = L.marker(
+                [41.2866588, 69.1497748],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_2e8e7fa6a59a236f272e8220d6eef4dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_705b6bdc89b67eb44a4396000d0e142b = $(`<div id="html_705b6bdc89b67eb44a4396000d0e142b" style="width: 100.0%; height: 100.0%;">O'rikzor bozor</div>`)[0];
+                popup_2e8e7fa6a59a236f272e8220d6eef4dc.setContent(html_705b6bdc89b67eb44a4396000d0e142b);
+            
+        
+
+        marker_967c49d9661730137f86fbce4c6b5d4b.bindPopup(popup_2e8e7fa6a59a236f272e8220d6eef4dc)
+        ;
+
+        
+    
+    
+            var marker_592b7b5838a2a63ffda77328db5e7d10 = L.marker(
+                [41.3532306, 69.3512892],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_9b52ba5518bd25cefe2611796a31ac3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d194b4e47e4fc9dfa12c64dfa4bcc4a = $(`<div id="html_8d194b4e47e4fc9dfa12c64dfa4bcc4a" style="width: 100.0%; height: 100.0%;">Ecobozor</div>`)[0];
+                popup_9b52ba5518bd25cefe2611796a31ac3b.setContent(html_8d194b4e47e4fc9dfa12c64dfa4bcc4a);
+            
+        
+
+        marker_592b7b5838a2a63ffda77328db5e7d10.bindPopup(popup_9b52ba5518bd25cefe2611796a31ac3b)
+        ;
+
+        
+    
+    
+            var marker_079bfd4ef32c69c5197b91d2ac868ea1 = L.marker(
+                [41.3544802, 69.3865978],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_f396580b847fe8b0229c4fa0db3ddca2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45053c568e0390590d30fb9e4357523e = $(`<div id="html_45053c568e0390590d30fb9e4357523e" style="width: 100.0%; height: 100.0%;">«Ширин» базар (Новый)</div>`)[0];
+                popup_f396580b847fe8b0229c4fa0db3ddca2.setContent(html_45053c568e0390590d30fb9e4357523e);
+            
+        
+
+        marker_079bfd4ef32c69c5197b91d2ac868ea1.bindPopup(popup_f396580b847fe8b0229c4fa0db3ddca2)
+        ;
+
+        
+    
+    
+            var marker_d96ccc1db7b6dafc79ef14bf5405c0eb = L.marker(
+                [41.244515, 69.1676187],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_f84d2445930317bbf8d7cba0ee2beb6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9330ec92433cfab11b114c3fffc05a44 = $(`<div id="html_9330ec92433cfab11b114c3fffc05a44" style="width: 100.0%; height: 100.0%;">Abu Sakhiy Trade Centre</div>`)[0];
+                popup_f84d2445930317bbf8d7cba0ee2beb6c.setContent(html_9330ec92433cfab11b114c3fffc05a44);
+            
+        
+
+        marker_d96ccc1db7b6dafc79ef14bf5405c0eb.bindPopup(popup_f84d2445930317bbf8d7cba0ee2beb6c)
+        ;
+
+        
+    
+    
+            var marker_42fca245bd1aa686dd35e663d458faf0 = L.marker(
+                [41.452284, 69.1675169],
+                {}
+            ).addTo(map_23add1f73a5b563c9d5c505d0537345a);
+        
+    
+        var popup_16277f9437ec249e7663d50619c26a69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88d9de56be23def4fdf0abfc6fab3f4c = $(`<div id="html_88d9de56be23def4fdf0abfc6fab3f4c" style="width: 100.0%; height: 100.0%;">Алып базар</div>`)[0];
+                popup_16277f9437ec249e7663d50619c26a69.setContent(html_88d9de56be23def4fdf0abfc6fab3f4c);
+            
+        
+
+        marker_42fca245bd1aa686dd35e663d458faf0.bindPopup(popup_16277f9437ec249e7663d50619c26a69)
+        ;
+
+        
+    
+</script>
+</html>
