@@ -87,7 +87,7 @@ def scrape_dom_uz_range(main_url, start_page, stop_page):
 
     for page in range(start_page, stop_page + 1):
         detail_url = f"{main_url}detail/{page}"
-
+        print(detail_url)
         result_entry = scrape_dom_uz_detail(detail_url)
 
         if result_entry:

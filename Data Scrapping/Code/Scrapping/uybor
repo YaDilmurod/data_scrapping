@@ -74,8 +74,11 @@ def fetch_data(start_page, end_page):
     all_data = []
 
     for page_number in range(start_page, end_page):
+       
         # Construct the API URL for the current page number and page
         api_url = f"{url_template}{page_number}"
+
+        print(api_url)
         # Fetch JSON data
         json_data = get_json_data(api_url)
 
