@@ -18,7 +18,7 @@ state_mapping = {
 }
 
 def get_json_data(api_url):
-    response = requests.get(api_url)
+    response = requests.get(api_url, timeout=1)
     if response.status_code == 200:
         return response.json()
     else:

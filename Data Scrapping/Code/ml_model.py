@@ -33,6 +33,6 @@ best_model.fit(X_train, y_train)
 y_pred = best_model.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 
-joblib.dump(best_model, '..\Data\linear_regression_model.pkl')
+joblib.dump(best_model, 'Data Scrapping\Data\linear_regression_model.pkl')
 
 

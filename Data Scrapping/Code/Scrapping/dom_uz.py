@@ -33,7 +33,7 @@ def scrape_dom_uz_detail(detail_url):
     result_entry = {}
 
     try:
-        response = requests.get(detail_url)
+        response = requests.get(detail_url, timeout=1)
 
         if response.status_code == 200:
             apartment_soup = BeautifulSoup(response.text, 'html.parser')
@@ -88,7 +88,7 @@ def scrape_dom_uz_range(main_url, start_page, stop_page):
 
     for page in range(start_page, stop_page + 1):
         detail_url = f"{main_url}detail/{page}"
-        print(detail_url)
+        # print(detail_url)
         result_entry = scrape_dom_uz_detail(detail_url)
 
         if result_entry:
@@ -100,8 +100,8 @@ def scrape_dom_uz_range(main_url, start_page, stop_page):
     return final_df
 
 # Specify the range of page numbers you want to scrape
-start_page_number = 13500
-stop_page_number = start_page_number + 1000
+start_page_number = 14000
+stop_page_number = start_page_number + 1500
 
 main_url_dom_uz = "https://dom.uz/catalog/"
 final_df = scrape_dom_uz_range(main_url_dom_uz, start_page_number, stop_page_number)

@@ -59,7 +59,7 @@ def scrape_apartment_details(main_url, num_pages):
             current_url = f"{main_url}?page={page}"
             # print(main_url, page)
             try:
-                response = requests.get(current_url, timeout=5)
+                response = requests.get(current_url, timeout=1)
                 response.raise_for_status()  # Raise an exception for HTTP errors
 
                 soup = BeautifulSoup(response.text, 'html.parser')
@@ -70,7 +70,7 @@ def scrape_apartment_details(main_url, num_pages):
                 # Loop through each apartment link
                 for link, region in zip(apartment_links, regions):
                     apartment_url = urljoin(main_url, link['href'])
-                    apartment_response = requests.get(apartment_url)
+                    apartment_response = requests.get(apartment_url, timeout=1)
                     if apartment_response.status_code == 200:
                         apartment_soup = BeautifulSoup(apartment_response.text, 'html.parser')
 
@@ -206,7 +206,7 @@ def scrape_apartment_details(main_url, num_pages):
             current_url = f"{main_url}?page={page}"
 
             try:
-                response = requests.get(current_url, timeout=5)
+                response = requests.get(current_url, timeout=1)
                 response.raise_for_status()  # Raise an exception for HTTP errors
 
                 soup = BeautifulSoup(response.text, 'html.parser')
@@ -218,7 +218,7 @@ def scrape_apartment_details(main_url, num_pages):
                 # Loop through each apartment link
                 for link, region in zip(apartment_links, regions):
                     apartment_url = urljoin(main_url, link['href'])
-                    apartment_response = requests.get(apartment_url)
+                    apartment_response = requests.get(apartment_url, timeout=1)
                     if apartment_response.status_code == 200:
                         apartment_soup = BeautifulSoup(apartment_response.text, 'html.parser')
 

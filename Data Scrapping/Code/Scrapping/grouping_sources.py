@@ -15,7 +15,7 @@ def concatenate_excels(folder_path, output_file):
     combined_data.to_excel(output_file, index=False)
 
 folder_path = '../../Excels'
-output_file = '../../Data/Combined.xlsx'
+output_file = 'Data Scrapping/Data/Combined.xlsx'
 concatenate_excels(folder_path, output_file)
 
 

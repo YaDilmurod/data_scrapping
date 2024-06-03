@@ -93,7 +93,7 @@ for apartment_link in apartment_links:
 
     try:
         # Get the HTML content of the linked page
-        linked_page_content = requests.get(link).text
+        linked_page_content = requests.get(link, timeout=2).text
 
         # Parse the HTML content with BeautifulSoup
         linked_soup = BeautifulSoup(linked_page_content, 'html.parser')

@@ -242,11 +242,11 @@ def remove_outliers(df, column, threshold):
     return df
 
 
-df = remove_outliers(df, 'price', 3)
-df = remove_outliers(df, 'num_of_rooms', 3)
-df = remove_outliers(df, 'area', 3)
-df.reset_index(drop=True, inplace=True)
+df = remove_outliers(df, 'price', 0.75)
+df = remove_outliers(df, 'num_of_rooms', 1.75)
+df = remove_outliers(df, 'area', 1.75)
 
+df.reset_index(drop=True, inplace=True)
 
 # %%
 df = df[['renovation',	'district', 'area',	'num_of_rooms', 'type', 'building_type', 'price']]
