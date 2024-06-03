@@ -1,10 +1,8 @@
 # Project_data_scrapping
 
 ## To enter Virtual Enviroment
-Windows
-.venv\Scripts\activate
 Mac
-source .venv/Scripts/activate
+source .venv/bin/activate
 
 ## To put all used packages into requirements.txt
 pip freeze > requirements.txt
