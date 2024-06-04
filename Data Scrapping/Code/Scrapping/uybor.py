@@ -18,12 +18,15 @@ state_mapping = {
 }
 
 def get_json_data(api_url):
-    response = requests.get(api_url, timeout=1)
-    if response.status_code == 200:
-        return response.json()
-    else:
-        print(f"Error {response.status_code}: Unable to fetch data from {api_url}")
-        return None
+    try:
+        response = requests.get(api_url, timeout=5)
+        if response.status_code == 200:
+            return response.json()
+        else:
+            print(f"Error {response.status_code}: Unable to fetch data from {api_url}")
+            return None
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
 
 def create_dataframe(json_data):
     if json_data and 'results' in json_data:
@@ -102,7 +105,7 @@ def fetch_data(start_page, end_page):
 url_template = "https://api.uybor.uz/api/v1/listings?mode=search&includeFeatured=true&limit=20&embed=category%2CsubCategory%2CresidentialComplex%2Cregion%2Ccity%2Cdistrict%2Czone%2Cstreet%2Cmetro%2Cmedia%2Cuser%2Cuser.avatar%2Cuser.organization%2Cuser.organization.logo&order=upAt&operationType__eq=sale&priceCurrency__eq=usd&page="
 
 start_page = 1
-end_page = 400
+end_page = 300
 
 final_df = fetch_data(start_page, end_page)
 
@@ -167,24 +170,9 @@ new_df[columns_to_check]
 import pandas as pd
 import os
 
-# Assuming x is your variable and data is the data you want to store
-name_of_file = "Uybor"
 df = pd.DataFrame(new_df)
 
-# Set the path to the Excels folder (assuming it is a sibling of the Notebooks folder)
-excels_folder_path = os.path.join(os.path.dirname(os.getcwd()), "Excels")
-
-# Check if the folder exists, if not, create it
-if not os.path.exists(excels_folder_path):
-    os.makedirs(excels_folder_path)
-
-# Create a folder with the name_of_file only if it doesn't exist
-file_folder_path = os.path.join(excels_folder_path, name_of_file)
-
-if not os.path.exists(file_folder_path):
-    os.makedirs(file_folder_path)
-
-excel_file_name = os.path.join(file_folder_path, f"{name_of_file}.xlsx")
+excel_file_name = 'Data Scrapping/Excels/Uybor/Uybor.xlsx'
 
 # Check if the file already exists
 if os.path.exists(excel_file_name):
@@ -213,5 +201,3 @@ else:
     # If the file doesn't exist, create a new Excel file with the data
     df.to_excel(excel_file_name, index=False)
     print(f"Excel file '{excel_file_name}' created with new data.")
-
-

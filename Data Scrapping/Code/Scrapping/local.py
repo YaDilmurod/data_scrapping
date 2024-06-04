@@ -120,27 +120,13 @@ print(f"\nNumber of rows deleted: {rows_deleted}")
 
 
 # %%
+# %%
 import pandas as pd
 import os
 
-# Assuming x is your variable and data is the data you want to store
-name_of_file = "Local"
-df = pd.DataFrame(df_no_duplicates)
+df = pd.DataFrame(new_df)
 
-# Set the path to the Excels folder (assuming it is a sibling of the Notebooks folder)
-excels_folder_path = os.path.join(os.path.dirname(os.getcwd()), "Excels")
-
-# Check if the folder exists, if not, create it
-if not os.path.exists(excels_folder_path):
-    os.makedirs(excels_folder_path)
-
-# Create a folder with the name_of_file only if it doesn't exist
-file_folder_path = os.path.join(excels_folder_path, name_of_file)
-
-if not os.path.exists(file_folder_path):
-    os.makedirs(file_folder_path)
-
-excel_file_name = os.path.join(file_folder_path, f"{name_of_file}.xlsx")
+excel_file_name = 'Data Scrapping/Excels/Local/Local.xlsx'
 
 # Check if the file already exists
 if os.path.exists(excel_file_name):
@@ -169,9 +155,4 @@ else:
     # If the file doesn't exist, create a new Excel file with the data
     df.to_excel(excel_file_name, index=False)
     print(f"Excel file '{excel_file_name}' created with new data.")
-
-
-
-
-
 

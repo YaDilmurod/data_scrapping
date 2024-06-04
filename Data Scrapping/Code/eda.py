@@ -164,59 +164,6 @@ allowed_categories = corrections.values()
 df = df[df['renovation'].isin(allowed_categories)]
 df.reset_index(drop=True, inplace=True)
 
-
-# %%
-# Group by 'district' column and count the number of rows in each group
-district_counts = df.groupby('district').size()
-
-# Display the count of rows in each district
-district_counts
-
-
-# %%
-df_map = pd.read_excel('Data Scrapping/Data/Map_Data.xlsx')
-categories_to_keep = ['Школа', 'Супермаркет', 'Магазин', 'Частная школа', 'Средняя школа', 'Начальная школа',
-                      'Международная школа', 'Торговый центр', 'Продовольственный магазин',
-                      'Магазин шаговой доступности', 'Супермаркет низких цен', 'Ресторан', 'фастфуд',
-                      'Узбекская кухня','Кафе','Суши','Турецкая кухня','Гамбургеры','Корейская кухня','Японская кухня','Еда на вынос','Доставка готовой еды','Парк']
-
-df_map = df_map[df_map['category'].isin(categories_to_keep)]
-
-corrections = {
-    'Магазин': 'grocery',
-    'Супермаркет': 'grocery',
-    'Продовольственный магазин': 'grocery',
-    'Магазин шаговой доступности': 'grocery',
-    'Супермаркет низких цен': 'grocery',
-    'Рынок': 'grocery',
-    'Начальная школа': 'school',
-    'Частная школа': 'school',
-    'Средняя школа': 'school',
-    'Школа': 'school',
-    'Международная школа': 'school',
-    'Торговый центр': 'mall',
-    'Парк': 'park',
-    'Ресторан':'food', 
-    'фастфуд':'food',
-    'Узбекская кухня':'food',
-    'Кафе':'food',
-    'Суши':'food',
-    'Турецкая кухня':'food',
-    'Гамбургеры':'food',
-    'Корейская кухня':'food',
-    'Японская кухня':'food',
-    'Еда на вынос':'food',
-    'Доставка готовой еды':'food',
-    'Парк': 'park'
-}
-
-df_map['category'].replace(corrections, inplace=True)
-
-df_map.dropna(subset=['category', 'lat', 'long'], inplace=True)
-
-df_map.drop_duplicates(subset=['category', 'lat', 'long'], inplace=True)
-
-
 # %%
 for column in df.columns:
     mode_value = df[column].mode()[0]
@@ -242,15 +189,14 @@ def remove_outliers(df, column, threshold):
     return df
 
 
-df = remove_outliers(df, 'price', 0.75)
-df = remove_outliers(df, 'num_of_rooms', 1.75)
-df = remove_outliers(df, 'area', 1.75)
+# df = remove_outliers(df, 'price', 1.5)
+df = remove_outliers(df, 'num_of_rooms', 3)
+# df = remove_outliers(df, 'area', 3)
 
-df.reset_index(drop=True, inplace=True)
+# df.reset_index(drop=True, inplace=True)
 
 # %%
-df = df[['renovation',	'district', 'area',	'num_of_rooms', 'type', 'building_type', 'price']]
-
+df = df[['source', 'renovation',	'district', 'area',	'num_of_rooms', 'type', 'building_type', 'price']]
 
 # %%
 def encode_and_drop(df, column_name):
@@ -274,8 +220,13 @@ df.columns
 
 
 # %%
+import os
+
 excel_file_path = "Data Scrapping/Data/Cleaned_Combined.xlsx"
-existing_data = pd.read_excel(excel_file_path)
-combined_data = pd.concat([existing_data, df])
-combined_data.drop_duplicates(keep='first', inplace=True)
-combined_data.to_excel(excel_file_path, index=False)
+if os.path.exists(excel_file_path):
+    existing_data = pd.read_excel(excel_file_path)
+    combined_data = pd.concat([existing_data, df])
+    combined_data.drop_duplicates(keep='first', inplace=True)
+    combined_data.to_excel(excel_file_path, index=False)
+else:
+    df.to_excel(excel_file_path, index=False)

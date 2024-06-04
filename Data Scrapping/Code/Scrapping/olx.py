@@ -59,7 +59,7 @@ def scrape_apartment_details(main_url, num_pages):
             current_url = f"{main_url}?page={page}"
             # print(main_url, page)
             try:
-                response = requests.get(current_url, timeout=1)
+                response = requests.get(current_url, timeout=5)
                 response.raise_for_status()  # Raise an exception for HTTP errors
 
                 soup = BeautifulSoup(response.text, 'html.parser')
@@ -70,7 +70,7 @@ def scrape_apartment_details(main_url, num_pages):
                 # Loop through each apartment link
                 for link, region in zip(apartment_links, regions):
                     apartment_url = urljoin(main_url, link['href'])
-                    apartment_response = requests.get(apartment_url, timeout=1)
+                    apartment_response = requests.get(apartment_url, timeout=5)
                     if apartment_response.status_code == 200:
                         apartment_soup = BeautifulSoup(apartment_response.text, 'html.parser')
 
@@ -206,7 +206,7 @@ def scrape_apartment_details(main_url, num_pages):
             current_url = f"{main_url}?page={page}"
 
             try:
-                response = requests.get(current_url, timeout=1)
+                response = requests.get(current_url, timeout=5)
                 response.raise_for_status()  # Raise an exception for HTTP errors
 
                 soup = BeautifulSoup(response.text, 'html.parser')
@@ -218,7 +218,7 @@ def scrape_apartment_details(main_url, num_pages):
                 # Loop through each apartment link
                 for link, region in zip(apartment_links, regions):
                     apartment_url = urljoin(main_url, link['href'])
-                    apartment_response = requests.get(apartment_url, timeout=1)
+                    apartment_response = requests.get(apartment_url, timeout=5)
                     if apartment_response.status_code == 200:
                         apartment_soup = BeautifulSoup(apartment_response.text, 'html.parser')
 
@@ -324,7 +324,7 @@ final_df = pd.concat([dom_df, kvartiri_df], ignore_index=True)
 # %%
 final_df['Дата'] = pd.to_datetime(final_df['Дата'], format='%Y-%m-%d').dt.strftime('%d.%m.%Y')
 final_df['Общая площадь'] = final_df['Общая площадь'].str.extract('(\d+)').astype(float)
-
+final_df.columns
 
 # %%
 column_name_mapping = {
@@ -385,27 +385,13 @@ print(f"\nNumber of rows deleted: {rows_deleted}")
 
 
 # %%
+# %%
 import pandas as pd
 import os
 
-# Assuming x is your variable and data is the data you want to store
-name_of_file = "Olx"
-df = pd.DataFrame(df_no_duplicates)
+df = pd.DataFrame(new_df)
 
-# Set the path to the Excels folder (assuming it is a sibling of the Notebooks folder)
-excels_folder_path = os.path.join(os.path.dirname(os.getcwd()), "Excels")
-
-# Check if the folder exists, if not, create it
-if not os.path.exists(excels_folder_path):
-    os.makedirs(excels_folder_path)
-
-# Create a folder with the name_of_file only if it doesn't exist
-file_folder_path = os.path.join(excels_folder_path, name_of_file)
-
-if not os.path.exists(file_folder_path):
-    os.makedirs(file_folder_path)
-
-excel_file_name = os.path.join(file_folder_path, f"{name_of_file}.xlsx")
+excel_file_name = 'Data Scrapping/Excels/Olx/Olx.xlsx'
 
 # Check if the file already exists
 if os.path.exists(excel_file_name):
