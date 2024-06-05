@@ -189,9 +189,9 @@ def remove_outliers(df, column, threshold):
     return df
 
 
-# df = remove_outliers(df, 'price', 1.5)
-df = remove_outliers(df, 'num_of_rooms', 3)
-# df = remove_outliers(df, 'area', 3)
+df = remove_outliers(df, 'price', 1.75)
+df = remove_outliers(df, 'num_of_rooms', 1.75)
+df = remove_outliers(df, 'area', 1.75)
 
 # df.reset_index(drop=True, inplace=True)
 
@@ -212,8 +212,6 @@ def encode_and_drop(df, column_name):
 columns_to_process = ['district', 'renovation', 'type', 'building_type']
 for column in columns_to_process:
     df = encode_and_drop(df, column)
-
-
 
 # %%
 df.columns

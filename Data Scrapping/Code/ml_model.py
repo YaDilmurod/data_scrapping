@@ -1,12 +1,10 @@
-# %%
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.model_selection import train_test_split, GridSearchCV
-from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.metrics import mean_squared_error
 import joblib
 import pandas as pd
 
-# %%
 df = pd.read_excel('Data Scrapping/Data/Cleaned_Combined.xlsx')
 
 columns_to_scale = ['num_of_rooms', 'area']
@@ -15,22 +13,27 @@ X_scaled = scaler.fit_transform(df[columns_to_scale])
 X_scaled_df = pd.DataFrame(X_scaled, columns=columns_to_scale)
 df = pd.concat([X_scaled_df, df.drop(columns_to_scale, axis=1)], axis=1)
 
-# %%
-X = df.drop('price', axis=1)
+joblib.dump(scaler, 'Data Scrapping/Code/Model/min_max_scaller.pkl')
+
+X = df.drop(['source','price'], axis=1)
 y = df['price']
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=40)
 
-param_grid = {'fit_intercept': [True, False]}
-grid_search = GridSearchCV(LinearRegression(), param_grid, cv=5, scoring='neg_mean_squared_error')
-grid_search.fit(X_train, y_train)
+model = GradientBoostingRegressor(
+    learning_rate=0.01,
+    n_estimators=300,
+    max_depth=5,
+    min_samples_split=10,
+    min_samples_leaf=4,
+    subsample=0.5
+)
 
-best_params = grid_search.best_params_
+model.fit(X_train, y_train)
 
-best_model = LinearRegression(**best_params)
-best_model.fit(X_train, y_train)
+y_pred = model.predict(X_test)
 
-y_pred = best_model.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
+print(f"Mean Squared Error: {mse}")
 
-joblib.dump(best_model, 'Data Scrapping\Data\linear_regression_model.pkl')
+joblib.dump(model, 'Data Scrapping/Code/Model/GradientBoosting.pkl')
