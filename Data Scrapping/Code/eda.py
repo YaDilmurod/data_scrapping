@@ -216,7 +216,6 @@ for column in columns_to_process:
 # %%
 df.columns
 
-
 # %%
 import os
 

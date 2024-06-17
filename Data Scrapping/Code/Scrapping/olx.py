@@ -114,7 +114,7 @@ def scrape_apartment_details(main_url, num_pages):
                             apartment_description = description_element.text.strip() if description_element else None
 
                             # Extract additional information with handling if element doesn't exist
-                            details_element = apartment_soup.select_one('ul.css-sfcl1s')
+                            details_element = apartment_soup.select_one('ul.css-px7scb')
                             details = {}
 
                             if details_element:
@@ -262,7 +262,7 @@ def scrape_apartment_details(main_url, num_pages):
                             apartment_description = description_element.text.strip() if description_element else None
 
                             # Extract additional information with handling if element doesn't exist
-                            details_element = apartment_soup.select_one('ul.css-sfcl1s')
+                            details_element = apartment_soup.select_one('ul.css-px7scb')
                             details = {}
 
                             if details_element:
