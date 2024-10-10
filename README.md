@@ -1,5 +1,5 @@
 ## To enter Virtual Enviroment
-source venv/bin/activate
+.venv\Scripts\activate
 
 ## To put all used packages into requirements.txt
 pip freeze > requirements.txt
